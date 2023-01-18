@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Bebas+Neue&family=Signika:wght@700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1em;
+}
+
+.navbar {
+  background: #ffffff;
+  color: black;
+}
+.navbar .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-block: 1em;
+}
+.navbar .flex .logo-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navbar .flex .logo-list .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navbar .flex .logo-list .logo span {
+  display: block;
+}
+.navbar .flex .logo-list .logo span:nth-child(1) {
+  color: #1560d0;
+  font-size: 0.8em;
+  font-weight: 400;
+  font-family: "signika", sans-serif;
+}
+.navbar .flex .logo-list .logo span:nth-child(2) {
+  line-height: 1em;
+  font-weight: 700;
+  font-size: 1.7em;
+  font-family: "Signika", sans-serif;
+}
+.navbar .flex .logo-list .logo img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 0.5em;
+  width: 25px;
+  height: 25px;
+}
+.navbar ul li {
+  display: inline-block;
+  display: none;
+}
+.navbar .login {
+  display: none;
+}
+
+.showcase {
+  background-image: -webkit-gradient(linear, left top, right top, from(#7145aa), to(#da4eb3));
+  background-image: linear-gradient(to right, #7145aa, #da4eb3);
+}
+.showcase .main-contain {
+  margin-inline: 1.5em;
+  max-width: 1200px;
+}
+
+.hero-1 {
+  padding-top: 3em;
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-1 h2 {
+  font-weight: 600;
+  font-family: "signika", sans-serif;
+}
+
+.hero-1 p {
+  width: 300px;
+  margin: auto;
+  padding-top: 1em;
+  font-family: "Arimo", sans-serif;
+}
+
+.hero-2 {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Arimo", sans-serif;
+  padding-block: 2em;
+}
+
+.hero-2 ul li:nth-child(1) {
+  display: none;
+}
+.hero-2 ul li:nth-child(2) {
+  border-radius: 5px;
+  background: #0065ff;
+  padding: 1em;
+  font-weight: 500;
+}
+.hero-2 ul li:nth-child(3) {
+  padding-block: 1em;
+}
+.hero-2 ul li:nth-child(3) .fa-thin {
+  margin-left: 0.5em;
+}
+
+.contain-2 img:nth-child(1) {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
