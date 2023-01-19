@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -80,18 +84,18 @@ li {
   display: none;
 }
 
-.showcase {
+.showcase-bg {
   background-image: -webkit-gradient(linear, left top, right top, from(#7145aa), to(#da4eb3));
   background-image: linear-gradient(to right, #7145aa, #da4eb3);
+  height: 70vh;
 }
-.showcase .main-contain {
+.showcase-bg .main-contain {
   margin-inline: 1.5em;
   max-width: 1200px;
 }
 
 .hero-1 {
   padding-top: 3em;
-  width: 400px;
   margin: auto;
   text-align: center;
   color: #ffffff;
@@ -103,7 +107,6 @@ li {
 }
 
 .hero-1 p {
-  width: 300px;
   margin: auto;
   padding-top: 1em;
   font-family: "Arimo", sans-serif;
@@ -132,9 +135,35 @@ li {
   margin-left: 0.5em;
 }
 
+.contain-2 {
+  background-image: url(image/white-wave-bg.svg);
+}
+
 .contain-2 img:nth-child(1) {
-  width: 100%;
+  margin: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.note-area {
+  padding-top: 5em;
+}
+.note-area .notes-head span {
+  font-weight: 500;
+  font-family: "Arimo", sans-serif;
+}
+.note-area .notes-head h2 {
+  padding-block: 0.5em;
+  font-weight: 400;
+  font-family: "signika", sans-serif;
+}
+.note-area .notes-head p {
+  padding-bottom: 1rem;
+  font-weight: 400;
+  font-family: "Arimo", "sans-serif";
+}
+.note-area .notes-head a {
+  list-style: decimal-leading-zero;
+  color: #1560d0;
 }
