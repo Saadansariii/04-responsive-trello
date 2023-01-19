@@ -200,6 +200,9 @@ li {
           box-shadow: 2px 2px 2px 4px rgb(194, 182, 182);
 }
 
+.slider-flex-1 {
+  height: 350px;
+}
 .slider-flex-1 .background-1 {
   height: 80px;
   background: -webkit-gradient(linear, left top, right top, from(#7145aa), to(#da4eb3));
@@ -226,6 +229,9 @@ li {
   font-family: "Arimo", "sans-serif";
 }
 
+.slider-flex-2 {
+  height: 350px;
+}
 .slider-flex-2 .background-2 {
   border-radius: 8px;
   height: 80px;
@@ -252,6 +258,9 @@ li {
   font-family: "Arimo", "sans-serif";
 }
 
+.slider-flex-3 {
+  height: 350px;
+}
 .slider-flex-3 .background-3 {
   border-radius: 8px;
   height: 80px;
@@ -278,6 +287,9 @@ li {
   font-family: "Arimo", "sans-serif";
 }
 
+.slider-flex-4 {
+  height: 350px;
+}
 .slider-flex-4 .background-4 {
   border-radius: 8px;
   height: 80px;
@@ -302,6 +314,9 @@ li {
   font-family: "Arimo", "sans-serif";
 }
 
+.slider-flex-5 {
+  height: 350px;
+}
 .slider-flex-5 .background-5 {
   border-radius: 8px;
   height: 80px;
@@ -328,6 +343,9 @@ li {
   font-family: "Arimo", "sans-serif";
 }
 
+.slider-flex-6 {
+  height: 350px;
+}
 .slider-flex-6 .background-6 {
   border-radius: 8px;
   height: 80px;
