@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Trello</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
 </head>
@@ -77,9 +78,115 @@
                 
             </div>
             <div class="notes-flex-2">
-                <img src="image/third.png" alt="trello img">
+                <!-- <img src="image/third.png" alt="trello img"> -->
             </div>
          </div>
+    </section>
+    <section class="slider">
+        <div class="slider-head container">
+            <span>A BLUEPRINT FOR SUCESS</span>
+            <h2>Template designed for any team</h2>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider-flex-1">
+                    <div class="background-1"></div>
+                    <div class="slider-1-1 container">
+                        <img src="image/favicon.ico" alt="logo">
+                    </div>
+                    <div class="slider-1-2 container">
+                        <h4>Project Management Template</h3>
+                        <span>by Trello marketing Team</span>
+                        <p>Big dreams turn into bigger results with a project plan. Use this template to build your team's ideal workflow,for project big or small.</p>
+                    </div>
+                </div>
+              </div>
+                <div class="swiper-slide">
+                    <div class="slider-flex-2">
+                        <div class="background-2"></div>
+                        <div class="slider-2-1 container">
+                            <img src="image/favicon.ico" alt="logo">
+                        </div>
+                        <div class="slider-2-2 container">
+                            <h4>Product Roadmap Template</h4>
+                            <span>by Trello Product Team</span>
+                            <p>Use the Trello product roadmap template to track product develop and feature request, and collabarate on developed processes.</p>
+                        </div>
+                    </div>
+                </div>
+              <div class="swiper-slide">
+                <div class="slider-flex-3">
+                    <div class="background-3"></div>
+                    <div class="slider-3-1 container">
+                        <img src="image/favicon.ico" alt="logo">
+                    </div>
+                    <div class="slider-3-2 container">
+                        <h4>Task management Template</h4>
+                        <span>by Mitchell fry,Engineer @ Oliver Wyman</span>
+                        <p>easily keep track of what you've done,what you have to do,and when you have to do it with this Trello task management template.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-flex-4">
+                    <div class="background-4"></div>
+                    <div class="slider-4-1 container">
+                        <img src="image/favicon.ico" alt="logo">
+                    </div>
+                    <div class="slider-4-2 container">
+                        <h4>Meeting Angenda Template</h4>
+                        <span>by Darre, co-founder @ Hugo</span>
+                        <p>Great meetings require planning.use this Trello template as the framework for more effective,collabration team meeting.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-flex-5">
+                    <div class="background-5"></div>
+                    <div class="slider-5-1 container">
+                        <img src="image/favicon.ico" alt="logo">
+                    </div>
+                    <div class="slider-5-2 container">
+                        <h4>Social Marketing Template</h4>
+                        <span>by Moission Marketing</span>
+                        <p>From generating ideas to planning your release schedule,use this Tello social media template to manage everything in one place.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-flex-6">
+                    <div class="background-6"></div>
+                    <div class="slider-6-1 container">
+                        <img src="image/favicon.ico" alt="">
+                    </div>
+                    <div class="slider-6-2 container">
+                        <h4>Kamban Template</h4>
+                        <span>by Trello Engineering Team</span>
+                        <p>Use this simple Kanban template to improve the productivity of your engineering team and help them build better product faster.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+      
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 1.5,
+              centeredSlides: true,
+              spaceBetween: 20,
+              grabCursor: true,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+            });
+          </script>
     </section>
 </body>
 </html>
