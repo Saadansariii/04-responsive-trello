@@ -90,56 +90,74 @@ li {
 }
 .showcase-bg .main-contain {
   margin-inline: 1.5em;
+}
+.showcase-bg .contain-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: inline-block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 1200px;
+  margin: auto;
 }
 
-.hero-1 {
+.contain-1 .hero-1 {
   padding-top: 3em;
   margin: auto;
   text-align: center;
   color: #ffffff;
 }
-
-.hero-1 h2 {
+.contain-1 .hero-1 h2 {
   font-weight: 600;
   font-family: "signika", sans-serif;
 }
-
-.hero-1 p {
+.contain-1 .hero-1 p {
   margin: auto;
   padding-top: 1em;
   font-family: "Arimo", sans-serif;
 }
-
-.hero-2 {
+.contain-1 .hero-2 {
   text-align: center;
   color: #ffffff;
   font-family: "Arimo", sans-serif;
   padding-block: 2em;
 }
-
-.hero-2 ul li:nth-child(1) {
-  display: none;
+.contain-1 .hero-2 .padding {
+  padding-block: 1em;
+  margin: auto;
 }
-.hero-2 ul li:nth-child(2) {
+.contain-1 .hero-2 .padding a {
+  text-align: center;
   border-radius: 5px;
   background: #0065ff;
   padding: 1em;
   font-weight: 500;
 }
-.hero-2 ul li:nth-child(3) {
+.contain-1 .hero-2 .li {
   padding-block: 1em;
+  margin: auto;
+  margin-top: 2em;
 }
-.hero-2 ul li:nth-child(3) .fa-thin {
-  margin-left: 0.5em;
+.contain-1 .hero-2 .li a {
+  margin: auto;
+  margin-top: 1em;
+  color: #ffffff;
+  padding: 1em;
 }
 
 .contain-2 {
-  background-image: url(image/white-wave-bg.svg);
-}
-
-.contain-2 img:nth-child(1) {
+  max-width: 1200px;
   margin: auto;
+}
+.contain-2 img {
+  margin: auto;
+  margin: auto;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -181,10 +199,6 @@ li {
   height: 100%;
 }
 .slider .swiper-slide {
-  -webkit-box-shadow: 1px 1px 1px 2px rgb(156, 141, 141);
-          box-shadow: 1px 1px 1px 2px rgb(156, 141, 141);
-  border-radius: 10px;
-  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,14 +209,19 @@ li {
       -ms-flex-align: center;
           align-items: center;
 }
-.slider .swiper-slide:hover {
+
+.slider-flex-1, .slider-flex-2, .slider-flex-3, .slider-flex-4, .slider-flex-5, .slider-flex-6 {
+  -webkit-box-shadow: 1px 1px 1px 2px rgb(156, 141, 141);
+          box-shadow: 1px 1px 1px 2px rgb(156, 141, 141);
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+.slider-flex-1:hover, .slider-flex-2:hover, .slider-flex-3:hover, .slider-flex-4:hover, .slider-flex-5:hover, .slider-flex-6:hover {
   -webkit-box-shadow: 2px 2px 2px 4px rgb(194, 182, 182);
           box-shadow: 2px 2px 2px 4px rgb(194, 182, 182);
 }
 
-.slider-flex-1 {
-  height: 350px;
-}
 .slider-flex-1 .background-1 {
   height: 80px;
   background: -webkit-gradient(linear, left top, right top, from(#7145aa), to(#da4eb3));
@@ -216,22 +235,19 @@ li {
 }
 .slider-flex-1 .slider-1-2 h4 {
   padding-block: 0.5em;
-  font-style: "signika", sans-serif;
+  font-family: "signika", sans-serif;
 }
 .slider-flex-1 .slider-1-2 span {
   margin-bottom: 0.5em;
   font-weight: 400;
-  font-style: "signika", sans-serif;
+  font-family: "signika", sans-serif;
 }
 .slider-flex-1 .slider-1-2 p {
   padding-block: 1em;
   font-weight: 400;
-  font-family: "Arimo", "sans-serif";
+  font-family: "Arima", "sans-serif";
 }
 
-.slider-flex-2 {
-  height: 350px;
-}
 .slider-flex-2 .background-2 {
   border-radius: 8px;
   height: 80px;
@@ -246,21 +262,18 @@ li {
 .slider-flex-2 .slider-2-2 h4 {
   padding-block: 0.5em;
   font-weight: 700;
-  font-style: "signika", sans-serif;
+  font-family: "signika", sans-serif;
 }
 .slider-flex-2 .slider-2-2 span {
   padding-bottom: 0.5em;
-  font-style: "signika", sans-serif;
+  font-family: "signika", sans-serif;
 }
 .slider-flex-2 .slider-2-2 p {
   padding-block: 1em;
   font-weight: 400;
-  font-family: "Arimo", "sans-serif";
+  font-family: "Arima", "sans-serif";
 }
 
-.slider-flex-3 {
-  height: 350px;
-}
 .slider-flex-3 .background-3 {
   border-radius: 8px;
   height: 80px;
@@ -275,21 +288,18 @@ li {
 .slider-flex-3 .slider-3-2 h4 {
   padding-block: 0.5em;
   font-weight: 700;
-  font-style: "signika", sans-serif;
+  font-family: "signika", sans-serif;
 }
 .slider-flex-3 .slider-3-2 span {
   font-weight: 400;
-  font-style: "signika", sans-serif;
+  font-family: "signika", sans-serif;
 }
 .slider-flex-3 .slider-3-2 p {
   padding-block: 1em;
   font-weight: 400;
-  font-family: "Arimo", "sans-serif";
+  font-family: "Arima", "sans-serif";
 }
 
-.slider-flex-4 {
-  height: 350px;
-}
 .slider-flex-4 .background-4 {
   border-radius: 8px;
   height: 80px;
@@ -303,20 +313,17 @@ li {
 }
 .slider-flex-4 .slider-4-2 h4 {
   padding-block: 0.5em;
-  font-style: "signika", sans-serif;
+  font-family: "signika", sans-serif;
 }
 .slider-flex-4 .slider-4-2 span {
-  font-style: "signika", sans-serif;
+  font-family: "signika", sans-serif;
 }
 .slider-flex-4 .slider-4-2 p {
   padding-block: 1em;
   font-weight: 400;
-  font-family: "Arimo", "sans-serif";
+  font-family: "Arima", "sans-serif";
 }
 
-.slider-flex-5 {
-  height: 350px;
-}
 .slider-flex-5 .background-5 {
   border-radius: 8px;
   height: 80px;
@@ -331,21 +338,18 @@ li {
 .slider-flex-5 .slider-5-2 h4 {
   padding-block: 0.5em;
   font-weight: 700;
-  font-style: "signika", sans-serif;
+  font-family: "signika", sans-serif;
 }
 .slider-flex-5 .slider-5-2 span {
   font-weight: 400;
-  font-style: "signika", sans-serif;
+  font-family: "signika", sans-serif;
 }
 .slider-flex-5 .slider-5-2 p {
   padding-block: 1em;
   font-weight: 400;
-  font-family: "Arimo", "sans-serif";
+  font-family: "Arima", "sans-serif";
 }
 
-.slider-flex-6 {
-  height: 350px;
-}
 .slider-flex-6 .background-6 {
   border-radius: 8px;
   height: 80px;
@@ -359,21 +363,399 @@ li {
 }
 .slider-flex-6 .slider-6-2 p {
   padding-block: 1em;
-  font-weight: 400;
-  font-family: "Arimo", "sans-serif";
+  font-family: "Arima", "sans-serif";
 }
 .slider-flex-6 .slider-6-2 span {
-  font-weight: 400;
-  font-style: "signika", sans-serif;
+  font-family: "signika", sans-serif;
 }
 .slider-flex-6 .slider-6-2 h4 {
+  font-family: "signika", sans-serif;
   padding-block: 0.5em;
   font-weight: 700;
-  font-style: "signika", sans-serif;
 }
 
 .swiper-slide img {
   display: table-row;
   width: 100%;
   height: 100%;
+}
+
+.bottom-swiper-flex {
+  max-width: 1200px;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-block: 2em;
+}
+.bottom-swiper-flex .swiper-note p {
+  padding-bottom: 1em;
+  max-width: 700px;
+  font-weight: 500;
+  font-family: "Arima", sans-serif;
+}
+.bottom-swiper-flex .swiper-btn a button {
+  background: #ffffff;
+  border-radius: 5px;
+  border: 1px solid rgb(44, 44, 206);
+  padding: 1em;
+  font-weight: 400;
+  font-family: "Arima", "sans-serif";
+}
+.bottom-swiper-flex .swiper-btn a button:hover {
+  background: rgb(118, 191, 236);
+}
+
+.trello-view {
+  background: -webkit-gradient(linear, left top, right top, from(#0079f6), to(#00b6da));
+  background: linear-gradient(to right, #0079f6, #00b6da);
+}
+.trello-view .head-trello {
+  max-width: 1200px;
+  text-align: center;
+  padding-block: 2em;
+}
+.trello-view .head-trello h2 {
+  font-weight: 600;
+  font-family: "signika", "sans-serif";
+}
+.trello-view .head-trello p {
+  padding-block: 1em;
+  font-family: "Arima", "sans-serif";
+}
+.trello-view .head-trello button {
+  background: #ffffff;
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px solid rgb(44, 44, 206);
+}
+.trello-view .head-trello button:hover {
+  background: rgb(118, 191, 236);
+}
+.trello-view .contain-trello {
+  margin-inline: 1em;
+}
+.trello-view .trello-flex-1, .trello-view .trello-flex-2 {
+  border-radius: 4px;
+  -webkit-box-shadow: 4px 4px 5px 2px rgb(119, 119, 119);
+          box-shadow: 4px 4px 5px 2px rgb(119, 119, 119);
+  padding: 1em;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: inline-block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  background: #ffffff;
+}
+.trello-view .trello-flex-1 .trello-img-1, .trello-view .trello-flex-1 .trello-img-2, .trello-view .trello-flex-2 .trello-img-1, .trello-view .trello-flex-2 .trello-img-2 {
+  max-width: 100%;
+  margin: auto;
+}
+.trello-view .trello-flex-1 .trello-p-1 h5, .trello-view .trello-flex-1 .trello-p-2 h5, .trello-view .trello-flex-2 .trello-p-1 h5, .trello-view .trello-flex-2 .trello-p-2 h5 {
+  padding-block: 1em;
+  font-size: 1.1em;
+  font-family: "Arimo";
+}
+.trello-view .trello-flex-1 .trello-p-1 p, .trello-view .trello-flex-1 .trello-p-2 p, .trello-view .trello-flex-2 .trello-p-1 p, .trello-view .trello-flex-2 .trello-p-2 p {
+  font-family: "Arimo";
+  font-size: 1.1em;
+  line-height: 1.3em;
+}
+.trello-view .trello-flex-1 .trello-p-1 a, .trello-view .trello-flex-1 .trello-p-2 a, .trello-view .trello-flex-2 .trello-p-1 a, .trello-view .trello-flex-2 .trello-p-2 a {
+  font-family: "Arimo";
+  line-height: 2em;
+  -webkit-text-decoration: underline 2px #0065ff;
+          text-decoration: underline 2px #0065ff;
+  color: #0079f6;
+  font-size: 1.1em;
+}
+.trello-view .trello-flex-1 {
+  margin-bottom: 1em;
+}
+.trello-view .trello-flex-2 {
+  margin-top: 1em;
+}
+
+.showcase-trello-3 {
+  background: #ffffff;
+  max-width: 1200px;
+  margin-inline: 1em;
+}
+.showcase-trello-3 .heading-showcase {
+  padding-block: 1em;
+}
+.showcase-trello-3 .heading-showcase h6 {
+  padding: 1em 0 0.5em 0;
+  font-size: 1em;
+  font-family: "Arimo", "sans-serif";
+}
+.showcase-trello-3 .heading-showcase h2 {
+  padding-bottom: 0.7em;
+  font-size: 1.7em;
+  font-family: "Signika";
+}
+.showcase-trello-3 .heading-showcase p {
+  max-width: 600px;
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family: "Arimo";
+}
+.showcase-trello-3 .showcase-flex {
+  display: grid;
+  grid-template-rows: repeat(1fr, 8);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+  margin: auto;
+}
+.showcase-trello-3 .showcase-flex .showcase-flex-1 {
+  grid-row: 1/3;
+}
+.showcase-trello-3 .showcase-flex .showcase-flex-2 {
+  grid-row: 3/6;
+}
+.showcase-trello-3 .showcase-flex .showcase-flex-3 {
+  grid-row: 6/9;
+}
+.showcase-trello-3 .showcase-flex .showcase-flex-1, .showcase-trello-3 .showcase-flex .showcase-flex-2, .showcase-trello-3 .showcase-flex .showcase-flex-3 {
+  background: #edeff0;
+  padding: 1em;
+  border-radius: 4px;
+}
+.showcase-trello-3 .showcase-flex .showcase-flex-1 img, .showcase-trello-3 .showcase-flex .showcase-flex-2 img, .showcase-trello-3 .showcase-flex .showcase-flex-3 img {
+  padding-bottom: 1em;
+  width: 100px;
+}
+.showcase-trello-3 .showcase-flex .showcase-flex-1 h2, .showcase-trello-3 .showcase-flex .showcase-flex-2 h2, .showcase-trello-3 .showcase-flex .showcase-flex-3 h2 {
+  padding-bottom: 0.5em;
+  font-family: "Signika";
+}
+.showcase-trello-3 .showcase-flex .showcase-flex-1 p, .showcase-trello-3 .showcase-flex .showcase-flex-2 p, .showcase-trello-3 .showcase-flex .showcase-flex-3 p {
+  padding-bottom: 1em;
+  font-family: "Arimo";
+}
+.showcase-trello-3 .showcase-flex .showcase-flex-1 a button, .showcase-trello-3 .showcase-flex .showcase-flex-2 a button, .showcase-trello-3 .showcase-flex .showcase-flex-3 a button {
+  background: #ffffff;
+  border-radius: 5px;
+  border: 1px solid rgb(44, 44, 206);
+  padding: 1em;
+  font-weight: 400;
+  font-family: "Arima", "sans-serif";
+}
+.showcase-trello-3 .showcase-flex .showcase-flex-1 a button:hover, .showcase-trello-3 .showcase-flex .showcase-flex-2 a button:hover, .showcase-trello-3 .showcase-flex .showcase-flex-3 a button:hover {
+  background: rgb(118, 191, 236);
+}
+
+.swiper-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(#ebfcff), to(#ffffff));
+  background: linear-gradient(to bottom, #ffffff, #ebfcff, #ffffff);
+  max-width: 1200px;
+}
+.swiper-2 .swiper-3 {
+  margin-inline: 1em;
+  padding-block: 2em;
+}
+.swiper-2 .swiper-3 .swiper-slide > div {
+  max-width: 650px;
+  border: 0.2px solid rgb(193, 182, 182);
+  margin: auto;
+  border-radius: 10px;
+}
+.swiper-2 .swiper-3 .swiper-slide {
+  -webkit-box-shadow: 1px gray;
+          box-shadow: 1px gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: inline;
+}
+.swiper-2 .swiper-3 .swiper-slide .swiper-flex-1 {
+  padding-inline: 1em;
+}
+.swiper-2 .swiper-3 .swiper-slide .swiper-flex-1 h6 {
+  padding-block: 1em;
+  font-family: "Signika";
+  font-size: 1.3em;
+}
+.swiper-2 .swiper-3 .swiper-slide .swiper-flex-1 span {
+  width: 30%;
+  font-size: 0.8em;
+}
+.swiper-2 .swiper-3 .swiper-slide .swiper-flex-1 img {
+  padding-top: 1em;
+  width: 150px;
+  margin: auto;
+}
+.swiper-2 .swiper-3 .swiper-slide .swiper-flex-1 a {
+  line-height: 4em;
+  color: #0079f6;
+  -webkit-text-decoration: underline 2px solid #0079f6;
+          text-decoration: underline 2px solid #0079f6;
+}
+.swiper-2 .swiper-3 .swiper-slide .swiper-flex-2 {
+  background: -webkit-gradient(linear, left top, right top, from(#7a5ec4), to(#e793d8));
+  background: linear-gradient(to right, #7a5ec4, #e793d8);
+  color: #ffffff;
+  padding: 1em;
+  border: 2px solid;
+}
+.swiper-2 .swiper-3 .swiper-slide .swiper-flex-2 h6 {
+  padding-top: 1em;
+  font-size: 1.3em;
+  font-family: "Signika";
+}
+.swiper-2 .swiper-3 .swiper-slide .swiper-flex-2 a {
+  line-height: 3em;
+  font-family: "Arimo";
+}
+.swiper-2 .swiper-3 .swiper-slide .swiper-flex-2 .padding {
+  padding-bottom: 3.5em;
+}
+.swiper-2 .swiper-foot {
+  text-align: center;
+  padding-inline: 1em;
+}
+.swiper-2 .swiper-foot h2 {
+  font-family: "Arimo";
+  font-size: 1.5em;
+  padding-block: 1em;
+}
+.swiper-2 .swiper-foot p {
+  padding-bottom: 1em;
+  font-family: "Arimo";
+  font-size: 1.2em;
+}
+.swiper-2 .swiper-foot a button {
+  font-size: 1.3em 0.9em;
+  border-radius: 7px;
+  font-family: "Arimo";
+  padding: 1em 2em;
+  background: #0065ff;
+  color: #ffffff;
+}
+.swiper-2 .swiper-foot a button:hover {
+  background: #0a66c2;
+}
+
+.plans {
+  padding-block: 2em;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+.plans .plans-flex > div {
+  border: 1px solid rgb(206, 200, 200);
+  padding: 1em;
+  background: #ffffff;
+  min-width: 80px;
+  max-width: 500px;
+  border-radius: 4px;
+  margin: 1em;
+}
+.plans .plans-flex {
+  margin-inline: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: inline-block;
+}
+.plans .plans-flex .plan-3 {
+  border: 2px solid rgb(21, 216, 255);
+}
+.plans .plans-flex .plan-1 {
+  padding-bottom: 3em;
+}
+.plans .plans-flex .head {
+  padding-block: 1em;
+  font-size: 1em;
+  font-family: "Arimo";
+}
+.plans .plans-flex .plan-span {
+  padding-bottom: 1em;
+  font-size: 1em;
+  font-family: "Arimo";
+}
+.plans .plans-flex .span {
+  font-family: "Arimo";
+  font-size: 2em;
+}
+.plans .plans-flex .plan-small {
+  font-size: 0.8em;
+  font-family: "Arimo";
+}
+.plans .plans-flex .plan-para {
+  font-weight: 600;
+  font-size: 1.2em;
+  font-family: "Arimo";
+  padding-bottom: 2em;
+}
+.plans .plans-flex .plan-btn {
+  padding-block: 1em;
+  border: 1px solid #0065ff;
+  padding: 0.8em;
+  border-radius: 5px;
+  width: 100px;
+  min-width: 40%;
+  max-width: 100%;
+}
+.plans .plans-flex .plan-btn:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #bcc9dc;
+}
+.plans .plans-flex .plan-line p {
+  padding-block: 2em;
+  -webkit-text-decoration: underline 2px solid #0079f6;
+          text-decoration: underline 2px solid #0079f6;
+}
+
+.swiper-company {
+  margin-inline: 1em;
+  padding-bottom: 2em;
+  background: #ffffff;
+  text-align: center;
+}
+.swiper-company h3 {
+  font-weight: 600;
+  font-family: "Arimo";
+  font-size: 1.3em;
+  padding-bottom: 1em;
+}
+.swiper-company img:nth-child(3) {
+  width: 300px;
+}
+.swiper-company img:nth-child(2) {
+  display: none;
+}
+
+.swiper-last {
+  background: -webkit-gradient(linear, left top, right top, from(#7b5ad0), to(#d8a1d0));
+  background: linear-gradient(to right, #7b5ad0, #d8a1d0);
+  padding-block: 2em;
+  text-align: center;
+}
+.swiper-last h2 {
+  font-size: 1.5em;
+  font-family: "Arimo";
+  color: #ffffff;
+}
+.swiper-last button {
+  font-size: 1em;
+  color: #ffffff;
+  padding: 1em 4em;
+  border: 1px solid #0079f6;
+  background: #0065ff;
+  margin-top: 2em;
+  border-radius: 5px;
 }
