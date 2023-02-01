@@ -7,6 +7,7 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
 img{
     width: 100%;
 }
@@ -23,6 +24,10 @@ a{
 }
 li{
     list-style: none;
+}
+body{
+    overflow-x: hidden;
+
 }
 .container{
     max-width: 1200px;
@@ -768,7 +773,8 @@ li{
             font-family: 'Arimo';
             font-size: 1.2em;
         }
-        a button{
+        button{
+            border: .1px solid $btn-color;
             font-size: 1.3em .9em;
             border-radius: 7px;
             font-family: 'Arimo';
@@ -777,6 +783,7 @@ li{
             color: #ffffff;
 
             &:hover{
+                transition: .3s;
                 background: #0a66c2;
             }
         } 

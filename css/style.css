@@ -19,6 +19,10 @@ li {
   list-style: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 1200px;
   margin-inline: auto;
@@ -633,7 +637,8 @@ li {
   font-family: "Arimo";
   font-size: 1.2em;
 }
-.swiper-2 .swiper-foot a button {
+.swiper-2 .swiper-foot button {
+  border: 0.1px solid #0065ff;
   font-size: 1.3em 0.9em;
   border-radius: 7px;
   font-family: "Arimo";
@@ -641,7 +646,9 @@ li {
   background: #0065ff;
   color: #ffffff;
 }
-.swiper-2 .swiper-foot a button:hover {
+.swiper-2 .swiper-foot button:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background: #0a66c2;
 }
 
