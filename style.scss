@@ -26,7 +26,8 @@ li{
     list-style: none;
 }
 body{
-    overflow-x: hidden;
+    position: relative;
+    // overflow-x: hidden;
 
 }
 .container{
@@ -792,24 +793,30 @@ body{
 .plans{
     padding-block: 2em;
     max-width: 1200px;
-    margin: auto;
-    // border: 8px solid black;
+    // margin: auto;
+    border: 8px solid black;
     // align-content: center;
-    position: relative;
+    // position: relative;
     .plans-flex > div{
+        // min-height: 300px;
         border: 1px solid rgb(206, 200, 200);
+        // min-width: 300px;
         // gap: 1em;
-        padding: 1em;
+        padding: 1em 1em;
         background: #ffffff;
-        min-width: 80px;
-        max-width: 500px;
+        // min-width: 80px;
+        // max-width: 500px;
         border-radius: 4px;
         // margin: auto;
-        margin: 1em;
+        margin-block: 1em;
         // align-items: center;
         
     }
     .plans-flex{
+        width: min(300px,600px);
+        margin: auto;
+        // padding-block: .5em;
+        overflow-x: hidden;
         margin-inline: 1em;
         // border: 4px solid black;
         display: flex;
