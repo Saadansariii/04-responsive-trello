@@ -98,7 +98,7 @@ body{
     .wave-bg{
         position: absolute;
         width: 100%;
-        height:150px;
+        height:200px;
         z-index: 1;
         bottom:0;
     }
@@ -109,7 +109,7 @@ body{
 .showcase-bg{
     max-width: 1200px;
     margin: auto;
-    border: 2px solid;
+    // border: 2px solid;
     // background-image: linear-gradient(to right, #7145aa,#da4eb3);
     // height: 70vh;
     .main-contain{
@@ -540,16 +540,19 @@ body{
     }
 }
 .trello-view{
-    img{
+    max-width: 1200px;
+    margin: auto;
+    // height: 100vh;
+    position: relative;
+    // z-index: 1;
+
+
+    .border-img{
         display: none;
     }
-    // margin: auto;
-    border: 2px solid;
     background:linear-gradient(to right,#0079f6,#00b6da);
 
     .head-trello{
-        max-width: 1200px;
-        // margin: auto;
         text-align: center;
         padding-block: 2em;
         h2{
@@ -562,71 +565,74 @@ body{
             font-family: 'Arima','sans-serif';
         }
         button{
+            font-size: 1em;
+            font-family: 'Arimo';
             background: #ffffff;
-            padding: 1em;
+            padding: 1.2em 1em;
             border-radius: 5px;
             border: 1px solid rgb(44, 44, 206) ;
             &:hover{
-                background: rgb(118, 191, 236);
+                background: rgb(157, 198, 223);
             }
         }
     }
-    .contain-trello{
-        // gap: 1em;
+    
+    .dead-line{
+
         // border: 2px solid red;
-        margin-inline: 1em;
-        // align-items: center;
-        // background: green;
-        // background: #ffffff;
-        // margin: auto;
-        // border: 8px solid black;
-        // background: #ffffff;
-        .trello-flex-1,.trello-flex-2{
-            // gap: 2em;
-            border-radius: 4px;
-            box-shadow: 4px 4px 5px 2px rgb(119, 119, 119);
-            padding: 1em;
-            max-width: 1200px;
+        position: relative;
+        // border: 1px solid gray;
+        padding-bottom: 2em;
+        // gap: 1em;
+        
+        .dead-line-flex-1,.dead-line-flex-2{
+            border-radius: 5px;
+            background: #ffffff;
+            padding: 2em;
             display: flex;
             flex-direction: column;
-            // display: inline-block;
-            justify-content: space-between;
-            margin: auto;
-            background: #ffffff;
-            // border-radius: 4px;
+
+            .dead-img{
+                margin-bottom: 1.5em;
+            }
+
+            .dead-para{
+
+                h5{
+                    font-size: 1em;
+                    font-family: 'Arimo';
+                    margin-bottom: 1em;
+                }
+
+                p{
+                    font-weight: 400;
+                    font-family: 'Arimo';
+                    line-height: 1.2em;
+                    font-size: 1.1em;
+                    margin-bottom: 1.5em;
+                }
+
+                a{
+                    color: #0079f6;
+                    text-decoration: underline 2px solid #0079f6;
+                }
+            }
+        }
+        .dead-line-flex-1{
+            margin-bottom: 1em;
         }
         
-        .trello-img-1,.trello-img-2{
-            width: 100%;
-            margin: auto;
-            // padding-block: 1em;
-        }
-        h5{
-            padding-block: 1em;
-            font-size: 1.1em;
-            font-family: 'Arimo';
-        }
-        p{
-            font-family: 'Arimo';
-            font-size: 1.1em;
-            line-height: 1.3em;
-            // color: blue;
-        }
-        a{
-            font-family: 'Arimo';
-            line-height: 2em;
-            text-decoration: underline 2px #0065ff;
-            // padding-bottom: 1em;
-            color: #0079f6;
-            font-size: 1.1em;
-            // border: 2px solid black;
-        }
-    }
-    .trello-flex-1{
-        margin-bottom: 1em;
-    }
-    .trello-flex-2{
-        margin-top: 1em;
+        // .dead-line-flex-2 {
+        //     border: 2px solid red;
+        //     position: absolute;
+        //     width: 100%;
+        //     height: auto;
+        //     z-index: 1;
+        //     top: .8;
+        //     margin: auto;
+        // }
+
+
     }
     
 }
