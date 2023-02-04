@@ -224,6 +224,14 @@ body {
   margin-inline: 1em;
 }
 
+.swiper-wrapper > div {
+  margin-inline: 1em;
+}
+
+.swiper-slide > div {
+  margin-inline: 1em;
+}
+
 .slider .slider-head {
   margin-block: 1em;
 }
