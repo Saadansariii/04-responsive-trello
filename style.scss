@@ -98,7 +98,7 @@ body{
     .wave-bg{
         position: absolute;
         width: 100%;
-        height:200px;
+        height:100px;
         z-index: 1;
         bottom:0;
     }
@@ -158,11 +158,7 @@ body{
             font-weight: 500; 
         }
         .li{
-            padding-block: 1em;
-            margin: auto;
-            // border: 2px solid ;
-            // margin-top: 1em;
-            // border: 2px solid black;
+            padding-top: 1em;
 
             a{
                 font-family: 'Arimo';
@@ -176,22 +172,22 @@ body{
 }
 
 .contain-2{
-    // max-width: 1200px;
-    // margin: auto;
-    // align-content: center;
-    // border: 2px solid black;
     margin: auto;
-    // background-image: url(image/white-wave-bg.svg);
+    // border: 2px solid blue;
+    // padding-top: 7em;
 
     img{
+        // padding-top: 8em;
         // border: 2px solid black;
-        margin: auto;
         width: 100%;
+        // margin: auto;
         // border: 2px solid rgb(23, 10, 10);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         position: relative;
+        height: auto;
+        top: 50px;
         z-index: 2;
     }
 }
@@ -540,9 +536,13 @@ body{
     }
 }
 .trello-view{
+
+    .trello-color{
+
+        background:linear-gradient(to right,#0079f6,#00b6da);
+    }
     max-width: 1200px;
-    margin: auto;
-    // height: 100vh;
+    margin: auto;  
     position: relative;
     // z-index: 1;
 
@@ -550,7 +550,6 @@ body{
     .border-img{
         display: none;
     }
-    background:linear-gradient(to right,#0079f6,#00b6da);
 
     .head-trello{
         text-align: center;
@@ -565,6 +564,7 @@ body{
             font-family: 'Arima','sans-serif';
         }
         button{
+            // margin-bottom: 5em;
             font-size: 1em;
             font-family: 'Arimo';
             background: #ffffff;
@@ -578,14 +578,15 @@ body{
     }
     
     .dead-line{
-
+        margin-inline: 1em;
         // border: 2px solid red;
         position: relative;
+        // z-index: 2;
         // border: 1px solid gray;
-        padding-bottom: 2em;
-        // gap: 1em;
+        // padding-bottom: 2em;
         
         .dead-line-flex-1,.dead-line-flex-2{
+            box-shadow: 2px 2px 2px 2px grey;
             border-radius: 5px;
             background: #ffffff;
             padding: 2em;
@@ -619,26 +620,35 @@ body{
             }
         }
         .dead-line-flex-1{
-            margin-bottom: 1em;
+
+            margin-block: auto;
         }
         
-        // .dead-line-flex-2 {
-        //     border: 2px solid red;
-        //     position: absolute;
-        //     width: 100%;
-        //     height: auto;
-        //     z-index: 1;
-        //     top: .8;
-        //     margin: auto;
-        // }
+        .dead-line-flex-2{
+            // border: 2px solid red;
+            position: relative;
+            width: 100%;
+            height: auto;
+            top: 100px;
+            z-index: 2;
+        }
 
-
+    .wave-bottom{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 500px;
+        z-index: 1;
+        // top: 0;
+        
+        
     }
     
 }
+}
 .showcase-trello-3{
     background: #ffffff;
-    // max-width: 1200px;
+    max-width: 1200px;
 
     margin-inline:1em;
     // border: 2px solid black;
@@ -665,9 +675,6 @@ body{
     .showcase-flex{
         display: grid;
         grid-template-rows: repeat(1fr,8);
-        // display: inline-block;
-        // justify-content: center;
-        // flex-wrap: wrap;
         gap: 1em;
         // margin: auto;
         // border: 2px solid red;
@@ -711,6 +718,7 @@ body{
         }
     }
 }
+
 .swiper-2{
     // background: #ffffff;
     background: linear-gradient(to bottom ,#ffffff,#ebfcff,#ffffff);
@@ -821,6 +829,7 @@ body{
         } 
     }
 }
+
 .plans{
     padding-block: 2em;
     max-width: 1200px;
@@ -931,6 +940,7 @@ body{
         }
     }
 }
+
 .swiper-last{
     background: linear-gradient(to right,#6f3eed,#a28d9f);
     // background: url(image/ViewsBackground_Left_Narrow.svg);
@@ -962,6 +972,7 @@ body{
         border-radius: 5px;
     }
 }
+
 .footer{
     // display: flex;
     // display: inline-block;
