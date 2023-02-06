@@ -24,9 +24,9 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin-inline: auto;
-  padding-inline: 1em;
+  padding-left: 1em;
 }
 
 .navbar {
@@ -80,12 +80,34 @@ body {
   width: 25px;
   height: 25px;
 }
-.navbar ul li {
-  display: inline-block;
+.navbar .list-items {
+  margin: auto;
+  text-align: center;
   display: none;
+  padding-left: 1em;
+}
+.navbar ul li {
+  font-weight: 300;
+  font-family: "Arimo";
+  display: inline-block;
+  margin-inline: 1em;
+}
+.navbar ul li:hover {
+  color: #0065ff;
 }
 .navbar .login {
   display: none;
+  font-size: 1.2em;
+  font-family: "Arimo";
+}
+.navbar .login .get-in {
+  color: #ffffff;
+  padding-block: 1.39em;
+  padding-inline: 1em;
+  background: #0065ff;
+}
+.navbar .login a {
+  margin-left: 1em;
 }
 
 #showcase {
@@ -146,13 +168,17 @@ body {
   padding-block: 2em;
 }
 .contain-1 .hero-2 .padding {
-  padding-block: 1em;
-  margin: auto;
-  font-family: "Arimo";
-  background: #0065ff;
-  border-radius: 7px;
-  text-align: center;
-  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
 }
 .contain-1 .hero-2 .li {
   padding-top: 1em;
@@ -162,6 +188,31 @@ body {
 }
 .contain-1 .hero-2 .li i {
   margin-left: 0.7em;
+}
+.contain-1 .hero-2 .textarea-top {
+  display: none;
+}
+.contain-1 .hero-2 .textarea-top textarea {
+  padding: 1em 7em 0em 0.5em;
+  outline: none;
+  resize: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: "Arimo";
+}
+.contain-1 .hero-2 .sign-btn {
+  max-width: 100%;
+  padding-block: 1em;
+  padding-inline: auto;
+  font-family: "Arimo";
+  background: #0065ff;
+  border-radius: 7px;
+  text-align: center;
+  font-weight: 300;
+  font-family: "Arimo";
+}
+.contain-1 .hero-2 .sign-btn a {
+  width: auto;
 }
 
 .contain-2 {
@@ -187,17 +238,14 @@ body {
   font-weight: 500;
   font-family: "Arimo", sans-serif;
 }
-.note-area .notes-head h2 {
+.note-area .notes-head h3 {
   line-height: 1em;
   padding-block: 0.5em;
-  font-weight: 400;
-  font-size: 1.5em;
   font-family: "signika", sans-serif;
 }
 .note-area .notes-head p {
   padding-bottom: 1rem;
   line-height: 1.3em;
-  font-size: 1.2em;
   font-weight: 400;
   font-family: "Arimo", "sans-serif";
 }
@@ -212,16 +260,17 @@ body {
 .note-area .notes-flex {
   padding-block: 2em;
 }
-.note-area .notes-border-1 {
+.note-area .notes-border-1 .notes-flex-2, .note-area .notes-border-1 .notes-flex-3, .note-area .notes-border-1 .notes-flex-4 {
   background: #ffffff;
   padding-block: 2em;
   margin-block: 1em;
   border-left: 10px solid #92dbee;
   border: 2px 2px 2px solid rgba(128, 128, 128, 0.2);
   border-radius: 6px;
-}
-.note-area .notes-border-1 .notes-flex-2 {
   margin-inline: 1em;
+}
+.note-area .notes-border-1 .notes-flex-3, .note-area .notes-border-1 .notes-flex-4 {
+  display: none;
 }
 
 .swiper-wrapper > div {
@@ -239,7 +288,7 @@ body {
   font-weight: 500;
   font-family: "Arimo", sans-serif;
 }
-.slider .slider-head h2 {
+.slider .slider-head h3 {
   padding-block: 0.5em;
   font-weight: 400;
   font-family: "signika", sans-serif;
@@ -252,7 +301,6 @@ body {
 .slider-flex-1, .slider-flex-2, .slider-flex-3, .slider-flex-4, .slider-flex-5, .slider-flex-6 {
   -webkit-box-shadow: 1px 1px 1px 2px rgb(156, 141, 141);
           box-shadow: 1px 1px 1px 2px rgb(156, 141, 141);
-  max-width: 400px;
   border-radius: 10px;
   margin-bottom: 1em;
 }
@@ -448,17 +496,13 @@ body {
   background: rgb(118, 191, 236);
 }
 
-.trello-view {
-  max-width: 1200px;
-  margin: auto;
-  position: relative;
-}
 .trello-view .trello-color {
   background: -webkit-gradient(linear, left top, right top, from(#0079f6), to(#00b6da));
   background: linear-gradient(to right, #0079f6, #00b6da);
 }
 .trello-view .border-img {
   display: none;
+  width: 50px;
 }
 .trello-view .head-trello {
   text-align: center;
@@ -483,6 +527,18 @@ body {
 .trello-view .head-trello button:hover {
   background: rgb(157, 198, 223);
 }
+.trello-view .dead-line-flex-1, .trello-view .dead-line-flex-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .trello-view .dead-line {
   margin-inline: 1em;
   position: relative;
@@ -496,10 +552,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin: auto;
 }
 .trello-view .dead-line .dead-line-flex-1 .dead-img, .trello-view .dead-line .dead-line-flex-2 .dead-img {
   margin-bottom: 1.5em;
@@ -522,6 +575,7 @@ body {
           text-decoration: underline 2px solid #0079f6;
 }
 .trello-view .dead-line .dead-line-flex-1 {
+  border: 2px solid blue;
   margin-block: auto;
 }
 .trello-view .dead-line .dead-line-flex-2 {
@@ -564,18 +618,12 @@ body {
   font-family: "Arimo";
 }
 .showcase-trello-3 .showcase-flex {
-  display: grid;
-  grid-template-rows: repeat(1fr, 8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 1em;
-}
-.showcase-trello-3 .showcase-flex .showcase-flex-1 {
-  grid-row: 1/3;
-}
-.showcase-trello-3 .showcase-flex .showcase-flex-2 {
-  grid-row: 3/6;
-}
-.showcase-trello-3 .showcase-flex .showcase-flex-3 {
-  grid-row: 6/9;
 }
 .showcase-trello-3 .showcase-flex .showcase-flex-1, .showcase-trello-3 .showcase-flex .showcase-flex-2, .showcase-trello-3 .showcase-flex .showcase-flex-3 {
   background: #edeff0;
@@ -586,8 +634,8 @@ body {
   padding-bottom: 1em;
   width: 100px;
 }
-.showcase-trello-3 .showcase-flex .showcase-flex-1 h2, .showcase-trello-3 .showcase-flex .showcase-flex-2 h2, .showcase-trello-3 .showcase-flex .showcase-flex-3 h2 {
-  padding-bottom: 0.5em;
+.showcase-trello-3 .showcase-flex .showcase-flex-1 h4, .showcase-trello-3 .showcase-flex .showcase-flex-2 h4, .showcase-trello-3 .showcase-flex .showcase-flex-3 h4 {
+  padding-bottom: 0.6em;
   font-family: "Signika";
 }
 .showcase-trello-3 .showcase-flex .showcase-flex-1 p, .showcase-trello-3 .showcase-flex .showcase-flex-2 p, .showcase-trello-3 .showcase-flex .showcase-flex-3 p {
@@ -606,21 +654,33 @@ body {
   background: rgb(118, 191, 236);
 }
 
-.swiper-2 {
+.swiper-wrapper-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.swiper-3 {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(#ebfcff), to(#ffffff));
   background: linear-gradient(to bottom, #ffffff, #ebfcff, #ffffff);
-  max-width: 1200px;
 }
-.swiper-2 .swiper-3 {
+.swiper-3 .swiper-4 {
   margin-inline: 1em;
   padding-block: 2em;
 }
-.swiper-2 .swiper-3 .swiper-slide > div {
+.swiper-3 .swiper-4 .swiper-slide-1 > div {
+  margin-inline: 1em;
   border: 2px solid rgba(128, 128, 128, 0.6);
   margin: auto;
   border-radius: 10px;
 }
-.swiper-2 .swiper-3 .swiper-slide {
+.swiper-3 .swiper-4 .swiper-slide-1 {
+  max-width: 470px;
+  margin: auto;
   -webkit-box-shadow: 1px gray;
           box-shadow: 1px gray;
   display: -webkit-box;
@@ -628,63 +688,63 @@ body {
   display: flex;
   display: inline;
 }
-.swiper-2 .swiper-3 .swiper-slide .swiper-flex-1 {
+.swiper-3 .swiper-4 .swiper-slide-1 .swiper-flex-1 {
   padding-inline: 1em;
 }
-.swiper-2 .swiper-3 .swiper-slide .swiper-flex-1 h6 {
+.swiper-3 .swiper-4 .swiper-slide-1 .swiper-flex-1 h6 {
   padding-block: 1em;
   font-family: "Signika";
   font-size: 1.3em;
 }
-.swiper-2 .swiper-3 .swiper-slide .swiper-flex-1 span {
+.swiper-3 .swiper-4 .swiper-slide-1 .swiper-flex-1 span {
   width: 30%;
   font-size: 0.8em;
 }
-.swiper-2 .swiper-3 .swiper-slide .swiper-flex-1 img {
+.swiper-3 .swiper-4 .swiper-slide-1 .swiper-flex-1 img {
   padding-top: 1em;
   width: 150px;
   margin: auto;
 }
-.swiper-2 .swiper-3 .swiper-slide .swiper-flex-1 a {
+.swiper-3 .swiper-4 .swiper-slide-1 .swiper-flex-1 a {
   line-height: 4em;
   color: #0079f6;
   -webkit-text-decoration: underline 2px solid #0079f6;
           text-decoration: underline 2px solid #0079f6;
 }
-.swiper-2 .swiper-3 .swiper-slide .swiper-flex-2 {
+.swiper-3 .swiper-4 .swiper-slide-1 .swiper-flex-2 {
   background: -webkit-gradient(linear, left top, right top, from(#7a5ec4), to(#e793d8));
   background: linear-gradient(to right, #7a5ec4, #e793d8);
   color: #ffffff;
   padding: 1em;
   border: 2px solid;
 }
-.swiper-2 .swiper-3 .swiper-slide .swiper-flex-2 h6 {
+.swiper-3 .swiper-4 .swiper-slide-1 .swiper-flex-2 h6 {
   padding-top: 1em;
   font-size: 1.3em;
   font-family: "Signika";
 }
-.swiper-2 .swiper-3 .swiper-slide .swiper-flex-2 a {
+.swiper-3 .swiper-4 .swiper-slide-1 .swiper-flex-2 a {
   line-height: 3em;
   font-family: "Arimo";
 }
-.swiper-2 .swiper-3 .swiper-slide .swiper-flex-2 .padding {
+.swiper-3 .swiper-4 .swiper-slide-1 .swiper-flex-2 .padding {
   padding-bottom: 3.5em;
 }
-.swiper-2 .swiper-foot {
+.swiper-3 .swiper-foot {
   text-align: center;
   padding-inline: 1em;
 }
-.swiper-2 .swiper-foot h2 {
+.swiper-3 .swiper-foot h2 {
   font-family: "Arimo";
   font-size: 1.5em;
   padding-block: 1em;
 }
-.swiper-2 .swiper-foot p {
+.swiper-3 .swiper-foot p {
   padding-bottom: 1em;
   font-family: "Arimo";
   font-size: 1.2em;
 }
-.swiper-2 .swiper-foot button {
+.swiper-3 .swiper-foot button {
   border: 0.1px solid #0065ff;
   font-size: 1.3em 0.9em;
   border-radius: 7px;
@@ -693,7 +753,7 @@ body {
   background: #0065ff;
   color: #ffffff;
 }
-.swiper-2 .swiper-foot button:hover {
+.swiper-3 .swiper-foot button:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background: #0a66c2;
@@ -701,7 +761,6 @@ body {
 
 .plans {
   padding-block: 2em;
-  max-width: 1200px;
 }
 .plans .plans-flex > div {
   border: 1px solid rgb(206, 200, 200);
@@ -711,17 +770,19 @@ body {
   margin-block: 1em;
 }
 .plans .plans-flex {
-  width: min-max(300px, 600px);
   margin: auto;
   overflow-x: hidden;
   margin-inline: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: inline-block;
 }
 .plans .plans-flex .plan-3 {
   border: 2px solid rgb(21, 216, 255);
@@ -735,7 +796,7 @@ body {
   font-family: "Arimo";
 }
 .plans .plans-flex .plan-span {
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
   font-size: 1em;
   font-family: "Arimo";
 }
@@ -744,6 +805,7 @@ body {
   font-size: 2em;
 }
 .plans .plans-flex .plan-small {
+  margin-bottom: 1em;
   font-size: 0.8em;
   font-family: "Arimo";
 }
@@ -785,10 +847,13 @@ body {
   font-size: 1.3em;
   padding-bottom: 1em;
 }
-.swiper-company img:nth-child(3) {
-  width: 300px;
+
+.mobile-view {
+  display: content;
+  max-width: 300px;
 }
-.swiper-company img:nth-child(2) {
+
+.moniter-view {
   display: none;
 }
 
@@ -807,19 +872,51 @@ body {
 .swiper-last:nth-child(2) {
   width: 50px;
 }
-.swiper-last h2 {
-  font-size: 1.5em;
+.swiper-last h3 {
   font-family: "Arimo";
   color: #ffffff;
 }
-.swiper-last button {
-  font-size: 1em;
-  color: #ffffff;
-  padding: 1em 5em;
-  border: 1px solid #0079f6;
-  background: #0065ff;
+.swiper-last .btn-container {
+  max-width: 700px;
+  margin-inline: auto;
   margin-top: 2em;
+  gap: 1em;
+  margin-inline: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.swiper-last .btn-container .textarea {
+  display: none;
+}
+.swiper-last .btn-container .textarea textarea {
+  width: 100%;
   border-radius: 5px;
+  padding: 1.7em 14em 0.5em 0.5em;
+  outline: none;
+  resize: none;
+}
+.swiper-last .btn-foot-1 {
+  text-align: center;
+  margin-inline: 1em;
+  background: #0065ff;
+  padding-block: 1em;
+  border-radius: 5px;
+  font-family: "Arimo";
+}
+.swiper-last .btn-foot-1 .btn-foot-1-1 {
+  color: #ffffff;
+  font-size: 1em;
+  padding: 0em 1em 2em;
+  font-family: "Arimo";
+  margin-inline: auto;
 }
 
 .footer {
@@ -908,15 +1005,289 @@ body {
 
 @media (min-width: 568px) {
   .swiper-wrapper > div {
-    max-width: 470px;
+    max-width: 400px;
     max-height: 400px;
   }
   .dead-line > div {
-    max-width: 450px;
+    max-width: 500px;
     margin: auto;
   }
   .showcase-flex > div {
-    max-width: 470px;
+    max-width: 500px;
     margin: auto;
+  }
+  .swiper-slide-1 {
+    max-width: 500px;
+  }
+  .heading-showcase, .head-trello, .contain-1, .notes-head, .notes-flex, .slider-head, .bottom-swiper-flex, .plans, .swiper-company, .swiper-last h2, .btn-foot, .footer-flex-1, .footer-flex-2 {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.5em;
+    font-family: "Signika";
+  }
+  h3 {
+    font-size: 1.7em;
+    font-family: "Signika";
+  }
+  h4 {
+    font-size: 1.3em;
+    font-family: "Arimo";
+  }
+  p {
+    font-size: 1.3em;
+    font-family: "Arimo";
+  }
+  a {
+    font-family: "Arimo";
+    font-size: 1em;
+  }
+  .small-font {
+    font-size: 1em;
+  }
+  .contain-1 .hero-1 h2 {
+    width: 600px;
+    margin: auto;
+  }
+  .heading-showcase, .head-trello, .contain-1, .notes-head, .notes-flex, .slider-head, .bottom-swiper-flex, .plans, .swiper-company, .swiper-last h2, .footer-flex-1, .footer-flex-2 {
+    max-width: 700px;
+    margin: auto;
+  }
+  .swiper-wrapper > div {
+    max-width: 600px;
+    max-height: 300px;
+  }
+  .dead-line > div {
+    max-width: 700px;
+    margin: auto;
+  }
+  .showcase-flex > div {
+    max-width: 300px;
+    margin: auto;
+  }
+  .showcase-flex {
+    max-width: 700px;
+    margin: auto;
+  }
+  .mobile-view {
+    max-width: 300px;
+    display: none;
+  }
+  .moniter-view {
+    padding-block: 1em;
+    display: inline;
+  }
+  .swiper-last .btn-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .swiper-last .btn-container .textarea {
+    display: inline;
+  }
+  .contain-1 .hero-2 .sign-btn {
+    padding-inline: 2em;
+  }
+  .contain-1 .hero-2 .padding {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contain-1 .hero-2 .textarea-top {
+    display: inline;
+  }
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 3em;
+    font-family: "Signika";
+  }
+  h3 {
+    font-size: 2em;
+    font-family: "Signika";
+  }
+  h4 {
+    font-size: 1.5em;
+    font-family: "Arimo";
+  }
+  p {
+    font-size: 1.5em;
+    font-family: "Arimo";
+  }
+  a {
+    font-family: "Arimo";
+    font-size: 1em;
+  }
+  .small-font {
+    font-size: 1em;
+  }
+  .contain-1 {
+    max-width: 500px;
+  }
+  .contain-1 .hero-1 {
+    padding-top: 0em;
+    text-align: start;
+  }
+  .contain-1 .hero-1 h2 {
+    text-align: start;
+  }
+  .contain-1 .hero-1 p {
+    padding-top: 0em;
+    text-align: start;
+  }
+  .contain-1 .hero-2 .padding {
+    gap: 0em;
+  }
+  .contain-1 .hero-2 .sign-btn {
+    margin-inline: auto;
+  }
+  .contain-1 .hero-2 .textarea-top {
+    margin-right: auto;
+  }
+  .contain-1 .hero-2 .textarea-top textarea {
+    padding: 1em 3em 0em 0.5em;
+  }
+  .contain-1 .hero-2 .li {
+    text-align: start;
+  }
+  .contain-1 .hero-2 .li a {
+    font-family: "Arimo";
+    font-size: 1em;
+    -webkit-text-decoration: underline 2px solid rgb(225, 209, 209);
+            text-decoration: underline 2px solid rgb(225, 209, 209);
+    color: rgb(225, 209, 209);
+  }
+  .navbar .list-items {
+    display: inline;
+  }
+  .navbar .login {
+    display: inline;
+  }
+  .contain-2 img {
+    bottom: 20px;
+  }
+  #showcase .wave-bg {
+    height: 50px;
+  }
+  .showcase-bg .contain-flex {
+    padding-block: 2em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .note-area {
+    max-width: 1200px;
+  }
+  .note-area .notes-head {
+    width: 700px;
+    margin: 2em;
+  }
+  .note-area .notes-flex {
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0em;
+    width: 100%;
+  }
+  .note-area .notes-flex .notes-flex-1 {
+    width: 60%;
+    margin: auto;
+  }
+  .note-area .notes-flex .notes-border-1 {
+    width: 35%;
+    height: 15%;
+    margin: 0em;
+  }
+  .note-area .notes-flex .notes-border-1 h4 {
+    font-family: "Arimo";
+    margin-left: 1em;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+  }
+  .note-area .notes-flex .notes-border-1 p {
+    font-family: "Arimo";
+    margin-left: 1em;
+    font-size: 1em;
+  }
+  .note-area .notes-flex .notes-border-1 .notes-flex-3, .note-area .notes-flex .notes-border-1 .notes-flex-4 {
+    display: block;
+  }
+  .slider-head {
+    max-width: 1200px;
+  }
+  .bottom-swiper-flex {
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-inline: 1em;
+  }
+  .bottom-swiper-flex .swiper-note p {
+    font-size: 1.3em;
+    font-family: "Arimo";
+  }
+  .bottom-swiper-flex .swiper-btn {
+    font-family: "Arimo";
+  }
+  .trello-view .dead-line-flex-1, .trello-view .dead-line-flex-2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .trello-view .dead-line-flex-2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .showcase-trello-3 {
+    margin-inline: 1em;
+  }
+  .showcase-trello-3 .showcase-flex {
+    max-width: 940px;
+    margin-inline: 1em;
+    width: auto;
+    height: auto;
+    border: 2px solid red;
+  }
+  .showcase-trello-3 .showcase-flex .showcase-flex-1 {
+    padding-block: 1.2em;
+  }
+  .showcase-trello-3 .showcase-flex .showcase-flex-3 {
+    padding-block: 1.5em;
+  }
+  .showcase-trello-3 .showcase-flex > div {
+    min-width: 300px;
+  }
+  .showcase-trello-3 .heading-showcase {
+    max-width: 1200px;
+    margin-inline: 1em;
+  }
+  .showcase-trello-3 .showcase-flex {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 100%;
+  }
+  .plans .plans-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: contents;
   }
 }

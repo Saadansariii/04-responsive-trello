@@ -31,9 +31,9 @@ body{
 
 }
 .container{
-    max-width: 1200px;
+    max-width: 1300px;
     margin-inline: auto;
-    padding-inline: 1em;
+    padding-left: 1em;
 }
 .navbar{
     background: #ffffff;
@@ -53,6 +53,7 @@ body{
         }
         .logo-list .logo{
             display: flex;
+
             // border: 2px solid black;
             span{
                 // margin-left: .5em;
@@ -81,12 +82,39 @@ body{
             }
         }
     }
-    ul li{
-        display: inline-block;
+    .list-items{
+        margin: auto;
+        text-align: center;
+        // border: 2px solid black;
         display: none;
+        padding-left: 1em;
+    }
+    ul li{
+        font-weight: 300;
+        font-family: 'Arimo';
+        display: inline-block;
+        // display: none;
+        margin-inline: 1em;
+
+        &:hover{
+            color: $btn-color;
+        }
     }
     .login{
         display: none;
+        font-size: 1.2em;
+        font-family: 'Arimo';
+
+        .get-in{
+            color: #ffffff;
+            padding-block: 1.39em;
+            padding-inline: 1em;
+            background: $btn-color;
+        }
+
+        a{
+            margin-left: 1em;
+        }
     }
 }
 
@@ -125,6 +153,7 @@ body{
     }
 }
 .contain-1{
+
     .hero-1{
 
         // border: 2px solid black;
@@ -148,14 +177,13 @@ body{
         font-family:'Arimo', sans-serif ;
         padding-block: 2em;
         .padding{
-            padding-block: 1em;
-            margin: auto;
-            font-family: 'Arimo';
             // border: 2px solid red;
-            background: $btn-color;
-            border-radius: 7px;
-            text-align: center;
-            font-weight: 500; 
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+            gap: 1em;
+            // border: 2px solid red;
+            // background: $btn-color;
         }
         .li{
             padding-top: 1em;
@@ -168,9 +196,45 @@ body{
                 margin-left: .7em;
             }
         }
+
+        .textarea-top{
+            // width: 100%;
+            display: none;
+            // padding-block: 1em;
+            textarea{
+                // width: 100%;
+                padding: 1em 7em 0em .5em;
+                // padding-block: 1em;
+                outline: none;
+                resize: none;
+                border-radius: 5px;
+                font-size: 1em;
+                font-family: 'Arimo';
+                // border: 2px solid black;
+            }
+        }
+        .sign-btn{
+            // margin-bottom: 1em;
+            max-width:100% ;
+            padding-block: 1em;
+            padding-inline: auto;
+            // margin: auto;
+            font-family: 'Arimo';
+            // border: 2px solid red;
+            background: $btn-color;
+            border-radius: 7px;
+            text-align: center;
+            font-weight: 300;
+            font-family: 'Arimo';
+            // border: 2px solid red;
+            
+            a{
+                width: auto;
+                // padding: 0em 1em 2em;
+            }
+        }
     }  
 }
-
 .contain-2{
     margin: auto;
     // border: 2px solid blue;
@@ -201,17 +265,17 @@ body{
             font-weight: 500;
             font-family:'Arimo', sans-serif ;
         }
-        h2{
+        h3{
             line-height: 1em;
             padding-block: .5em;
-            font-weight: 400;
-            font-size: 1.5em;
+            // font-weight: 400;
+            // font-size: 1.5em;
             font-family: 'signika', sans-serif;
         }
         p{
             padding-bottom: 1rem;
             line-height: 1.3em;
-            font-size: 1.2em;
+            // font-size: 1.2em;
             font-weight: 400;
             font-family:'Arimo','sans-serif' ;
             
@@ -231,17 +295,21 @@ body{
         // background:#e2f7fc;
     }
     .notes-border-1{
-        background: #ffffff;
-        padding-block: 2em;
-        margin-block: 1em;
-        // border: 2px solid;
-        border-left: 10px solid #92dbee;
-        border: 2px 2px 2px solid rgba($color: grey, $alpha: .2);
-        border-radius: 6px;
         // margin: 1em;
-
-        .notes-flex-2{
+        
+        .notes-flex-2, .notes-flex-3, .notes-flex-4{
+            background: #ffffff;
+            padding-block: 2em;
+            margin-block: 1em;
+            // border: 2px solid;
+            border-left: 10px solid #92dbee;
+            border: 2px 2px 2px solid rgba($color: grey, $alpha: .2);
+            border-radius: 6px;
             margin-inline:1em ;
+        }
+
+        .notes-flex-3,.notes-flex-4{
+            display: none;
         }
     }
 }
@@ -260,7 +328,7 @@ body{
             font-weight: 500;
             font-family:'Arimo', sans-serif ;
         }
-        h2{
+        h3{
             padding-block: .5em;
             font-weight: 400;
             font-family: 'signika', sans-serif;
@@ -276,8 +344,6 @@ body{
     }
     .slider-flex-1,.slider-flex-2,.slider-flex-3,.slider-flex-4,.slider-flex-5,.slider-flex-6{
         box-shadow: 1px 1px 1px 2px  rgb(156, 141, 141);
-        max-width: 400px;
-        // width: 400px;
         border-radius: 10px;
         margin-bottom: 1em;
         // max-height: 400px;
@@ -539,19 +605,15 @@ body{
     }
 }
 .trello-view{
-
+    
     .trello-color{
-
         background:linear-gradient(to right,#0079f6,#00b6da);
     }
-    max-width: 1200px;
-    margin: auto;  
-    position: relative;
-    // z-index: 1;
 
 
     .border-img{
         display: none;
+        width: 50px;
     }
 
     .head-trello{
@@ -579,14 +641,15 @@ body{
             }
         }
     }
-    
+    .dead-line-flex-1, .dead-line-flex-2{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
     .dead-line{
         margin-inline: 1em;
         // border: 2px solid red;
         position: relative;
-        // z-index: 2;
-        // border: 1px solid gray;
-        // padding-bottom: 2em;
         
         .dead-line-flex-1,.dead-line-flex-2{
             box-shadow: 2px 2px 2px 2px grey;
@@ -594,14 +657,15 @@ body{
             background: #ffffff;
             padding: 2em;
             display: flex;
-            flex-direction: column;
+            margin: auto;
 
             .dead-img{
+                // width: auto;
                 margin-bottom: 1.5em;
             }
 
             .dead-para{
-
+                // width: 30%;
                 h5{
                     font-size: 1em;
                     font-family: 'Arimo';
@@ -623,8 +687,9 @@ body{
             }
         }
         .dead-line-flex-1{
-
+            border: 2px solid blue;
             margin-block: auto;
+            // max-height: 600px;
         }
         
         .dead-line-flex-2{
@@ -676,20 +741,9 @@ body{
         }
     }
     .showcase-flex{
-        display: grid;
-        grid-template-rows: repeat(1fr,8);
+        display: flex;
+        flex-wrap: wrap;
         gap: 1em;
-        // margin: auto;
-        // border: 2px solid red;
-        .showcase-flex-1{
-            grid-row: 1/3;
-        }
-        .showcase-flex-2{
-            grid-row: 3/6;
-        }
-        .showcase-flex-3{
-            grid-row: 6/9;
-        }
         .showcase-flex-1,.showcase-flex-2,.showcase-flex-3{
             background: #edeff0;
             padding: 1em;
@@ -698,8 +752,8 @@ body{
                 padding-bottom: 1em;
                 width: 100px;
             }
-            h2{
-                padding-bottom: .5em;
+            h4{
+                padding-bottom: .6em;
                 font-family: 'Signika';
             }
             p{
@@ -722,35 +776,37 @@ body{
     }
 }
 
-.swiper-wrapper-1 > div {
-    // max-width: 570px;
-    // border: 2px solid red;
-    // height: auto;
-    // margin-inline:1em ;
+// .swiper-wrapper-1 > div {
+//     max-width: 570px;
+//     border: 2px solid red;
+//     height: auto;
+//     margin-inline:1em ;
+// }
+
+
+.swiper-wrapper-1{
+    display: flex;
+    flex-direction: row;
 }
-.swiper-2{
+.swiper-3{
     // background: #ffffff;
     background: linear-gradient(to bottom ,#ffffff,#ebfcff,#ffffff);
-    max-width: 1200px;
-    // margin-inline:2em;
 
 
 
-    .swiper-3{
+    .swiper-4{
         margin-inline: 1em;
         padding-block: 2em;
         // border: 2px solid;
-        .swiper-slide > div{
-            // height: auto;
-            // max-width: 650px;
-            // border: .2px solid rgb(193, 182, 182);
+        .swiper-slide-1 > div{
+            margin-inline: 1em;
             border: 2px solid rgba($color: grey, $alpha: .6);
             margin: auto;
             border-radius: 10px;
         }
-        .swiper-slide{
-            // border-radius: 4px;
-            // margin-inline: 2em;
+        .swiper-slide-1{
+            max-width: 470px;
+            margin: auto;
             box-shadow: 1px gray;
             display: flex;
             display: inline;
@@ -770,10 +826,6 @@ body{
                     
                 }
                 img{
-                    // align-content: flex-end;
-                    // align-items: flex-start;
-                    // align-content: flex-start;
-                    // border: 2px solid;
                     padding-top: 1em;
                     width: 150px;
                     margin: auto;
@@ -839,11 +891,6 @@ body{
 
 .plans{
     padding-block: 2em;
-    max-width: 1200px;
-    // margin: auto;
-    // border: 8px solid black;
-    // align-content: center;
-    // position: relative;
     .plans-flex > div{
         // min-height: 300px;
         border: 1px solid rgb(206, 200, 200);
@@ -860,15 +907,15 @@ body{
         
     }
     .plans-flex{
-        width: min-max(300px,600px);
+        // width: min-max(300px,600px);
         margin: auto;
-        // padding-block: .5em;
         overflow-x: hidden;
         margin-inline: 1em;
         // border: 4px solid black;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        display: inline-block;
+        // display: ;
         .plan-3{
             border: 2px solid rgb(21, 216, 255);
         }
@@ -882,7 +929,7 @@ body{
             font-family: 'Arimo';
         }
         .plan-span{
-            padding-bottom: 1em;
+            padding-bottom: .5em;
             font-size: 1em;
             font-family: 'Arimo';
         }
@@ -891,6 +938,7 @@ body{
             font-size: 2em;
         }
         .plan-small{
+            margin-bottom: 1em;
             font-size: .8em;
             font-family: 'Arimo';
         }
@@ -935,19 +983,17 @@ body{
         font-size: 1.3em;
         padding-bottom: 1em;
     }
-    img{
-        // width: 500px;
-        &:nth-child(3){
-            // border: 2px solid black;
-            // display: none;
-            width: 300px;
-        }
-        &:nth-child(2){
-            display: none;
-        }
-    }
+    
+    
 }
 
+.mobile-view{
+    display: content;
+    max-width: 300px;
+}
+.moniter-view{
+    display: none;
+}
 .swiper-last{
     background: linear-gradient(to right,#6f3eed,#a28d9f);
     // background: url(image/ViewsBackground_Left_Narrow.svg);
@@ -962,22 +1008,58 @@ body{
     &:nth-child(2){
         width: 50px;
     }
-    h2{
-        font-size: 1.5em;
+    h3{
+        // font-size: 1.5em;
         font-family: 'Arimo';
         color:#ffffff;
-        // padding-bottom: 2em;
-        // border: 2px solid;
     }
-    button{
-        font-size: 1em;
-        color: #ffffff;
-        padding: 1em 5em;
-        border: 1px solid #0079f6;
-        background:#0065ff;
+    .btn-container{
+        // border: 2px solid red;
+        max-width: 700px;
+        margin-inline: auto;
         margin-top: 2em;
-        border-radius: 5px;
+        gap: 1em;
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .textarea{
+            display: none;
+            // border: 2px solid red;
+            
+            textarea{
+                width: 100%;
+                // height: 59px;
+                border-radius: 5px;
+                padding:1.7em 14em .5em .5em;
+                outline: none;
+                resize: none;
+                
+                // align-items: center;
+                // text-align: center;
+    
+            }
+        }
     }
+    .btn-foot-1{
+        // border: 2px solid red;
+        text-align: center;
+        margin-inline: 1em;
+        background:#0065ff;
+        padding-block: 1em;
+        border-radius: 5px;
+        font-family: 'Arimo';
+
+        .btn-foot-1-1{
+            color: #ffffff;
+            font-size: 1em;
+            padding: 0em 1em 2em;
+            font-family: 'Arimo';
+            margin-inline: auto;
+            
+        }
+    }
+    
 }
 
 .footer{
@@ -1094,23 +1176,352 @@ body{
 
 @media (min-width:568px){
     .swiper-wrapper > div{
-        max-width: 470px;
+        max-width: 400px;
         max-height: 400px;
+        // border: 2px solid red;
     }
 
     .dead-line > div {
-        max-width: 450px;
+        max-width: 500px;
         margin: auto;
     }
 
     .showcase-flex > div {
-        max-width: 470px;
+        max-width: 500px;
         margin: auto;
     }
 
-    .swiper-slide{
+    .swiper-slide-1{
         // border: 2px solid red;
-        // max-width: 470px;
+        max-width: 500px;
         // max-height: 1100px;
+    }
+
+    .heading-showcase,.head-trello,.contain-1,.notes-head,.notes-flex,.slider-head,.bottom-swiper-flex,.plans,.swiper-company,.swiper-last h2,.btn-foot,.footer-flex-1,.footer-flex-2{
+        max-width: 500px;
+        margin: auto;
+    }
+}
+
+@media (min-width:768px){
+
+    h2{
+        font-size: 2.5em;
+        font-family: 'Signika';
+    }
+
+    h3{
+        font-size: 1.7em;
+        font-family: 'Signika';
+    }
+
+    h4{
+        font-size: 1.3em;
+        font-family: 'Arimo';
+    }
+    p{
+        font-size: 1.3em;
+        font-family: 'Arimo';
+    }
+
+    a{
+        font-family: 'Arimo';
+        font-size: 1em;
+    }
+    .small-font{
+        font-size: 1em;
+    }
+    .contain-1 .hero-1 h2{
+        width: 600px;
+        margin: auto;
+    }
+
+    .heading-showcase,.head-trello,.contain-1,.notes-head,.notes-flex,.slider-head,.bottom-swiper-flex,.plans,.swiper-company,.swiper-last h2,.footer-flex-1,.footer-flex-2{
+        max-width: 700px;
+        margin: auto;
+    }
+    
+    .swiper-wrapper > div{
+        max-width: 600px;
+        max-height: 300px;
+        // border: 2px solid red;
+    }
+
+    .dead-line > div {
+        max-width: 700px;
+        margin: auto;
+    }
+    .showcase-flex > div {
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .showcase-flex{
+        max-width: 700px;
+        margin: auto;
+    }
+    .mobile-view{
+        max-width: 300px;
+        display: none;
+    }
+    .moniter-view{
+        padding-block: 1em;
+        // border: 2px solid blue;
+        display: inline;
+    }
+    
+    .swiper-last{
+
+        .btn-container{
+                flex-direction: row;
+    
+                .textarea{
+                    display: inline;
+                }
+            }
+    }
+
+    .contain-1{
+        .hero-2{
+            .sign-btn{
+                padding-inline: 2em;
+            }
+            .padding{
+                flex-direction: row;
+            }
+            .textarea-top{
+                display: inline;
+            }
+        }
+    }
+       
+}
+
+@media (min-width:1024px){
+
+    h2{
+        font-size: 3em;
+        font-family: 'Signika';
+    }
+
+    h3{
+        font-size: 2em;
+        font-family: 'Signika';
+    }
+
+    h4{
+        font-size: 1.5em;
+        font-family: 'Arimo';
+    }
+    p{
+        font-size: 1.5em;
+        font-family: 'Arimo';
+    }
+
+    a{
+        font-family: 'Arimo';
+        font-size: 1em;
+    }
+    .small-font{
+        font-size: 1em;
+    }
+
+    .contain-1{
+        max-width: 500px;
+        // border: 2px solid red;
+        
+        .hero-1{
+            // margin-left: 1em;
+            // border: 2px solid black;
+            // margin: 1px;
+            padding-top: 0em;
+            text-align: start;
+        }
+        
+        .hero-1 h2{
+            text-align: start;
+        }
+
+        .hero-1 p{
+            padding-top: 0em;
+            // width: 500px;
+            text-align: start;
+        }
+
+        .hero-2 {
+
+            .padding{
+                // border: 1px solid red;
+                gap: 0em;
+            }
+            .sign-btn{
+                margin-inline: auto;
+            }
+            // border: 2px solid red;
+            .textarea-top{
+                margin-right: auto;
+                // border: 2px solid red;
+                // margin: auto;
+                textarea{
+                    padding: 1em 3em 0em .5em;
+                }
+            }
+           .li{
+               text-align: start;
+               
+               a{
+                    font-family: 'Arimo';
+                    font-size: 1em;
+                    // border: 2px solid red;
+                    text-decoration: underline 2px solid  rgb(225, 209, 209);
+                    color: rgb(225, 209, 209);
+                    // margin-left: 1.3em;
+                }
+
+                
+           } 
+        }
+    }
+    .navbar{
+        .list-items{
+            display: inline;
+        }
+        .login{
+            display: inline;
+        }
+    }
+
+    .contain-2{
+        img{
+            // top: 100px;
+            bottom: 20px;
+        }
+    }
+    #showcase{
+        .wave-bg{
+            height: 50px;
+        }
+    }
+    .showcase-bg{
+        .contain-flex{
+            padding-block: 2em;
+            flex-direction: row;
+        }
+    }
+
+    .note-area{
+        max-width: 1200px;
+        .notes-head{
+            width: 700px;
+            margin: 2em;
+        }
+
+        .notes-flex{
+            max-width: 1200px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            margin: 0em;
+            width: 100%;
+            
+            .notes-flex-1{
+                width: 60%;
+                margin: auto;
+                
+            }
+            
+            .notes-border-1{
+                // border: 2px solid red;
+                width: 35%;
+                height: 15%;
+                margin: 0em;
+                h4{
+                    font-family: 'Arimo';
+                    margin-left: 1em;
+                    font-size: 1em;
+                    margin-bottom: .5em;
+                }
+                p{
+                    font-family: 'Arimo';
+                    margin-left: 1em;
+                    font-size: 1em;
+                }
+                .notes-flex-3,.notes-flex-4{
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .slider-head{
+        max-width: 1200px;
+    }
+    .bottom-swiper-flex{
+        max-width: 1200px;
+        display: flex;
+        margin-inline: 1em;
+        // border: 2px solid red;
+
+        .swiper-note{
+            p{
+                font-size: 1.3em;
+                font-family: 'Arimo';
+            }
+        }
+
+        .swiper-btn{
+            font-family: 'Arimo';
+            // border: 2px solid red;
+        }
+    }
+
+    .trello-view{
+        .dead-line-flex-1,.dead-line-flex-2{
+            flex-direction: row;
+        }
+        .dead-line-flex-2{
+            flex-direction: row-reverse;
+        }
+    }
+    .showcase-trello-3{
+        // margin: 0;
+        margin-inline: 1em;
+        .showcase-flex{
+            max-width: 940px;
+            margin-inline: 1em;
+            width: auto;
+            height: auto;
+            border: 2px solid red;
+            .showcase-flex-1{
+                padding-block: 1.2em;
+            }
+            .showcase-flex-3{
+                padding-block: 1.5em;
+            }
+            
+        }
+
+        .showcase-flex > div{
+            // border: 2px solid blue;
+            min-width: 300px;
+        }
+
+        .heading-showcase{
+            max-width: 1200px;
+            margin-inline: 1em;
+        }
+
+        .showcase-flex{
+            flex-wrap: nowrap;
+            width: 100%;
+        }
+        
+    }
+    .plans{
+
+        .plans-flex{
+            flex-direction: column;
+            display: contents;
+        }
     }
 }
