@@ -232,6 +232,7 @@ body {
 .note-area {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5fdff));
   background: linear-gradient(to bottom, #ffffff, #f5fdff);
+  margin-inline: 1em;
   padding-top: 3em;
 }
 .note-area .notes-head span {
@@ -258,7 +259,7 @@ body {
   color: #1560d0;
 }
 .note-area .notes-flex {
-  padding-block: 2em;
+  margin: 2em 1em;
 }
 .note-area .notes-border-1 .notes-flex-2, .note-area .notes-border-1 .notes-flex-3, .note-area .notes-border-1 .notes-flex-4 {
   background: #ffffff;
@@ -267,7 +268,13 @@ body {
   border-left: 10px solid #92dbee;
   border: 2px 2px 2px solid rgba(128, 128, 128, 0.2);
   border-radius: 6px;
-  margin-inline: 1em;
+  margin-inline: auto;
+}
+.note-area .notes-border-1 .notes-flex-2 h4, .note-area .notes-border-1 .notes-flex-3 h4, .note-area .notes-border-1 .notes-flex-4 h4 {
+  margin: 0 0 0.5em 1em;
+}
+.note-area .notes-border-1 .notes-flex-2 p, .note-area .notes-border-1 .notes-flex-3 p, .note-area .notes-border-1 .notes-flex-4 p {
+  margin-left: 1em;
 }
 .note-area .notes-border-1 .notes-flex-3, .note-area .notes-border-1 .notes-flex-4 {
   display: none;
@@ -462,27 +469,35 @@ body {
 }
 
 .swiper-slide img {
-  display: table-row;
   width: 100%;
   height: 100%;
 }
 
 .bottom-swiper-flex {
-  max-width: 1200px;
-  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-block: 2em;
+  margin-inline: 1em;
 }
 .bottom-swiper-flex .swiper-note p {
-  padding-bottom: 1em;
+  margin-bottom: 1em;
   max-width: 700px;
   font-weight: 500;
   font-family: "Arima", sans-serif;
+}
+.bottom-swiper-flex .swiper-btn {
+  margin-right: auto;
 }
 .bottom-swiper-flex .swiper-btn a button {
   background: #ffffff;
@@ -493,7 +508,7 @@ body {
   font-family: "Arima", "sans-serif";
 }
 .bottom-swiper-flex .swiper-btn a button:hover {
-  background: rgb(118, 191, 236);
+  background: rgb(186, 212, 228);
 }
 
 .trello-view .trello-color {
@@ -507,20 +522,21 @@ body {
 .trello-view .head-trello {
   text-align: center;
   padding-block: 2em;
+  margin-inline: 1em;
 }
 .trello-view .head-trello h2 {
-  font-weight: 600;
-  font-family: "signika", "sans-serif";
+  font-family: "Arimo";
 }
 .trello-view .head-trello p {
   padding-block: 1em;
   font-family: "Arima", "sans-serif";
 }
 .trello-view .head-trello button {
+  margin-top: 1em;
   font-size: 1em;
   font-family: "Arimo";
   background: #ffffff;
-  padding: 1.2em 1em;
+  padding: 1em;
   border-radius: 5px;
   border: 1px solid rgb(44, 44, 206);
 }
@@ -541,24 +557,23 @@ body {
 }
 .trello-view .dead-line {
   margin-inline: 1em;
-  position: relative;
 }
 .trello-view .dead-line .dead-line-flex-1, .trello-view .dead-line .dead-line-flex-2 {
   -webkit-box-shadow: 2px 2px 2px 2px grey;
           box-shadow: 2px 2px 2px 2px grey;
   border-radius: 5px;
   background: #ffffff;
-  padding: 2em;
+  padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: auto;
 }
 .trello-view .dead-line .dead-line-flex-1 .dead-img, .trello-view .dead-line .dead-line-flex-2 .dead-img {
+  width: 100%;
   margin-bottom: 1.5em;
 }
 .trello-view .dead-line .dead-line-flex-1 .dead-para h5, .trello-view .dead-line .dead-line-flex-2 .dead-para h5 {
-  font-size: 1em;
   font-family: "Arimo";
   margin-bottom: 1em;
 }
@@ -566,17 +581,12 @@ body {
   font-weight: 400;
   font-family: "Arimo";
   line-height: 1.2em;
-  font-size: 1.1em;
   margin-bottom: 1.5em;
 }
 .trello-view .dead-line .dead-line-flex-1 .dead-para a, .trello-view .dead-line .dead-line-flex-2 .dead-para a {
   color: #0079f6;
   -webkit-text-decoration: underline 2px solid #0079f6;
           text-decoration: underline 2px solid #0079f6;
-}
-.trello-view .dead-line .dead-line-flex-1 {
-  border: 2px solid blue;
-  margin-block: auto;
 }
 .trello-view .dead-line .dead-line-flex-2 {
   position: relative;
@@ -589,24 +599,23 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 500px;
+  height: 400px;
   z-index: 1;
 }
 
 .showcase-trello-3 {
   background: #ffffff;
-  max-width: 1200px;
   margin-inline: 1em;
 }
 .showcase-trello-3 .heading-showcase {
   padding-block: 1em;
 }
-.showcase-trello-3 .heading-showcase h6 {
-  padding: 1em 0 0.5em 0;
+.showcase-trello-3 .heading-showcase h5 {
+  margin: 1em 0 0.5em 0;
   font-size: 1em;
   font-family: "Arimo", "sans-serif";
 }
-.showcase-trello-3 .heading-showcase h2 {
+.showcase-trello-3 .heading-showcase h3 {
   padding-bottom: 0.7em;
   font-size: 1.7em;
   font-family: "Signika";
@@ -634,15 +643,15 @@ body {
   padding-bottom: 1em;
   width: 100px;
 }
-.showcase-trello-3 .showcase-flex .showcase-flex-1 h4, .showcase-trello-3 .showcase-flex .showcase-flex-2 h4, .showcase-trello-3 .showcase-flex .showcase-flex-3 h4 {
+.showcase-trello-3 .showcase-flex .showcase-flex-1 h5, .showcase-trello-3 .showcase-flex .showcase-flex-2 h5, .showcase-trello-3 .showcase-flex .showcase-flex-3 h5 {
   padding-bottom: 0.6em;
   font-family: "Signika";
 }
 .showcase-trello-3 .showcase-flex .showcase-flex-1 p, .showcase-trello-3 .showcase-flex .showcase-flex-2 p, .showcase-trello-3 .showcase-flex .showcase-flex-3 p {
-  padding-bottom: 1em;
+  margin-bottom: 1em;
   font-family: "Arimo";
 }
-.showcase-trello-3 .showcase-flex .showcase-flex-1 a button, .showcase-trello-3 .showcase-flex .showcase-flex-2 a button, .showcase-trello-3 .showcase-flex .showcase-flex-3 a button {
+.showcase-trello-3 .showcase-flex .showcase-flex-1 button, .showcase-trello-3 .showcase-flex .showcase-flex-2 button, .showcase-trello-3 .showcase-flex .showcase-flex-3 button {
   background: #ffffff;
   border-radius: 5px;
   border: 1px solid rgb(44, 44, 206);
@@ -650,84 +659,73 @@ body {
   font-weight: 400;
   font-family: "Arima", "sans-serif";
 }
-.showcase-trello-3 .showcase-flex .showcase-flex-1 a button:hover, .showcase-trello-3 .showcase-flex .showcase-flex-2 a button:hover, .showcase-trello-3 .showcase-flex .showcase-flex-3 a button:hover {
+.showcase-trello-3 .showcase-flex .showcase-flex-1 button:hover, .showcase-trello-3 .showcase-flex .showcase-flex-2 button:hover, .showcase-trello-3 .showcase-flex .showcase-flex-3 button:hover {
   background: rgb(118, 191, 236);
-}
-
-.swiper-wrapper-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .swiper-3 {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(#ebfcff), to(#ffffff));
   background: linear-gradient(to bottom, #ffffff, #ebfcff, #ffffff);
+  margin-inline: auto;
 }
 .swiper-3 .swiper-4 {
   margin-inline: 1em;
-  padding-block: 2em;
+  margin-block: 2em;
 }
 .swiper-3 .swiper-4 .swiper-slide-1 > div {
   margin-inline: 1em;
   border: 2px solid rgba(128, 128, 128, 0.6);
-  margin: auto;
   border-radius: 10px;
 }
-.swiper-3 .swiper-4 .swiper-slide-1 {
-  max-width: 470px;
-  margin: auto;
-  -webkit-box-shadow: 1px gray;
-          box-shadow: 1px gray;
+.swiper-3 .swiper-4 .swiper-slide-border {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: inline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.swiper-3 .swiper-4 .swiper-slide-1 .swiper-flex-1 {
+.swiper-3 .swiper-4 .swiper-slide-border .swiper-flex-1 {
   padding-inline: 1em;
 }
-.swiper-3 .swiper-4 .swiper-slide-1 .swiper-flex-1 h6 {
+.swiper-3 .swiper-4 .swiper-slide-border .swiper-flex-1 h6 {
   padding-block: 1em;
   font-family: "Signika";
   font-size: 1.3em;
 }
-.swiper-3 .swiper-4 .swiper-slide-1 .swiper-flex-1 span {
+.swiper-3 .swiper-4 .swiper-slide-border .swiper-flex-1 span {
   width: 30%;
   font-size: 0.8em;
 }
-.swiper-3 .swiper-4 .swiper-slide-1 .swiper-flex-1 img {
+.swiper-3 .swiper-4 .swiper-slide-border .swiper-flex-1 img {
   padding-top: 1em;
   width: 150px;
   margin: auto;
 }
-.swiper-3 .swiper-4 .swiper-slide-1 .swiper-flex-1 a {
+.swiper-3 .swiper-4 .swiper-slide-border .swiper-flex-1 a {
   line-height: 4em;
   color: #0079f6;
   -webkit-text-decoration: underline 2px solid #0079f6;
           text-decoration: underline 2px solid #0079f6;
 }
-.swiper-3 .swiper-4 .swiper-slide-1 .swiper-flex-2 {
+.swiper-3 .swiper-4 .swiper-slide-border .swiper-flex-2 {
   background: -webkit-gradient(linear, left top, right top, from(#7a5ec4), to(#e793d8));
   background: linear-gradient(to right, #7a5ec4, #e793d8);
   color: #ffffff;
   padding: 1em;
-  border: 2px solid;
+  border-radius: 5px;
 }
-.swiper-3 .swiper-4 .swiper-slide-1 .swiper-flex-2 h6 {
+.swiper-3 .swiper-4 .swiper-slide-border .swiper-flex-2 h6 {
   padding-top: 1em;
   font-size: 1.3em;
   font-family: "Signika";
 }
-.swiper-3 .swiper-4 .swiper-slide-1 .swiper-flex-2 a {
+.swiper-3 .swiper-4 .swiper-slide-border .swiper-flex-2 a {
   line-height: 3em;
   font-family: "Arimo";
 }
-.swiper-3 .swiper-4 .swiper-slide-1 .swiper-flex-2 .padding {
+.swiper-3 .swiper-4 .swiper-slide-border .swiper-flex-2 .padding {
   padding-bottom: 3.5em;
 }
 .swiper-3 .swiper-foot {
@@ -746,17 +744,18 @@ body {
 }
 .swiper-3 .swiper-foot button {
   border: 0.1px solid #0065ff;
-  font-size: 1.3em 0.9em;
+  font-size: 1em;
   border-radius: 7px;
   font-family: "Arimo";
-  padding: 1em 2em;
+  padding: 1em;
   background: #0065ff;
   color: #ffffff;
 }
 .swiper-3 .swiper-foot button:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background: #0a66c2;
+  color: black;
+  background: rgb(103, 103, 239);
 }
 
 .plans {
@@ -1126,6 +1125,13 @@ body {
   .small-font {
     font-size: 1em;
   }
+  .swiper-wrapper > div {
+    max-width: 430px;
+    max-height: auto;
+    margin-inline: 0.5em;
+    scroll-behavior: auto;
+    overflow: hidden;
+  }
   .contain-1 {
     max-width: 500px;
   }
@@ -1231,16 +1237,20 @@ body {
   }
   .bottom-swiper-flex {
     max-width: 1200px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-inline: 1em;
+    margin-inline: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border: 2px solid red;
   }
   .bottom-swiper-flex .swiper-note p {
     font-size: 1.3em;
     font-family: "Arimo";
   }
   .bottom-swiper-flex .swiper-btn {
+    margin-left: auto;
+    margin-right: 0;
     font-family: "Arimo";
   }
   .trello-view .dead-line-flex-1, .trello-view .dead-line-flex-2 {

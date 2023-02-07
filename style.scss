@@ -258,6 +258,7 @@ body{
 .note-area{
     background: linear-gradient(to bottom, (#ffffff), (#f5fdff));
     // border: 2px solid black;
+    margin-inline: 1em;
     padding-top: 3em;
     .notes-head{
         span{
@@ -290,22 +291,27 @@ body{
         
     }
     .notes-flex{
-        // border: 2px solid;
-        padding-block: 2em;
-        // background:#e2f7fc;
+        margin: 2em 1em;
+
     }
+
     .notes-border-1{
-        // margin: 1em;
-        
         .notes-flex-2, .notes-flex-3, .notes-flex-4{
             background: #ffffff;
             padding-block: 2em;
             margin-block: 1em;
-            // border: 2px solid;
             border-left: 10px solid #92dbee;
             border: 2px 2px 2px solid rgba($color: grey, $alpha: .2);
             border-radius: 6px;
-            margin-inline:1em ;
+            margin-inline: auto;
+            // margin-right:1em ;
+
+            h4{
+                margin:0 0 .5em 1em;
+            }
+            p{
+                margin-left: 1em;
+            }
         }
 
         .notes-flex-3,.notes-flex-4{
@@ -321,6 +327,7 @@ body{
 .swiper-slide > div{
     margin-inline: 1em;
 }
+
 .slider{
     .slider-head{
         margin-block: 1em;
@@ -567,40 +574,39 @@ body{
 
 
 .swiper-slide img {
-        display: table-row;
+        // display: table-row;
         width: 100%;
         height: 100%;
         // object-fit: cover;
 }
 .bottom-swiper-flex{
-    max-width: 1200px;
-    margin: auto;
-    // border: 2px solid ;
-    // display: flex;
+    display: flex;
     justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding-block: 2em;
+    margin-inline: 1em;
     // display: none;
     .swiper-note p{
-        padding-bottom: 1em;
+        margin-bottom: 1em;
         max-width: 700px;
         // color: blue;
         font-weight: 500;
         font-family: 'Arima', sans-serif;
     }
-    // .swiper-btn{
-    //     border: 2px solid;
-    //     // margin-top: 1em;
-    // }
-    .swiper-btn a button{
-        background: #ffffff;
-        border-radius: 5px;
-        border: 1px solid rgb(44, 44, 206);
-        padding: 1em;
-        font-weight: 400;
-        font-family:'Arima','sans-serif';
-        &:hover{
-            background: rgb(118, 191, 236);
+    .swiper-btn{
+        margin-right: auto;
+
+        a button{
+            background: #ffffff;
+            border-radius: 5px;
+            border: 1px solid rgb(44, 44, 206);
+            padding: 1em;
+            font-weight: 400;
+            font-family:'Arima','sans-serif';
+            &:hover{
+                background: rgb(186, 212, 228);
+            }
         }
     }
 }
@@ -619,21 +625,22 @@ body{
     .head-trello{
         text-align: center;
         padding-block: 2em;
+        margin-inline: 1em;
         h2{
 
-            font-weight: 600;
-            font-family: 'signika','sans-serif';
+            // font-weight: 600;
+            font-family: 'Arimo';
         }
         p{
             padding-block: 1em;
             font-family: 'Arima','sans-serif';
         }
         button{
-            // margin-bottom: 5em;
+            margin-top: 1em;
             font-size: 1em;
             font-family: 'Arimo';
             background: #ffffff;
-            padding: 1.2em 1em;
+            padding: 1em;
             border-radius: 5px;
             border: 1px solid rgb(44, 44, 206) ;
             &:hover{
@@ -648,26 +655,22 @@ body{
     }
     .dead-line{
         margin-inline: 1em;
-        // border: 2px solid red;
-        position: relative;
         
         .dead-line-flex-1,.dead-line-flex-2{
             box-shadow: 2px 2px 2px 2px grey;
             border-radius: 5px;
             background: #ffffff;
-            padding: 2em;
+            padding: 1em;
             display: flex;
             margin: auto;
 
             .dead-img{
-                // width: auto;
+                width: 100%;
                 margin-bottom: 1.5em;
             }
 
             .dead-para{
-                // width: 30%;
                 h5{
-                    font-size: 1em;
                     font-family: 'Arimo';
                     margin-bottom: 1em;
                 }
@@ -676,7 +679,6 @@ body{
                     font-weight: 400;
                     font-family: 'Arimo';
                     line-height: 1.2em;
-                    font-size: 1.1em;
                     margin-bottom: 1.5em;
                 }
 
@@ -686,14 +688,8 @@ body{
                 }
             }
         }
-        .dead-line-flex-1{
-            border: 2px solid blue;
-            margin-block: auto;
-            // max-height: 600px;
-        }
         
         .dead-line-flex-2{
-            // border: 2px solid red;
             position: relative;
             width: 100%;
             height: auto;
@@ -705,7 +701,7 @@ body{
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 500px;
+        height: 400px;
         z-index: 1;
         // top: 0;
         
@@ -716,19 +712,17 @@ body{
 }
 .showcase-trello-3{
     background: #ffffff;
-    max-width: 1200px;
-
-    margin-inline:1em;
     // border: 2px solid black;
+    margin-inline:1em;
 
     .heading-showcase{
         padding-block: 1em;
-        h6{
-            padding: 1em 0 .5em 0;
+        h5{
+            margin: 1em 0 .5em 0;
             font-size: 1em;
             font-family:'Arimo','sans-serif';
         }
-        h2{
+        h3{
             padding-bottom: .7em;
             font-size: 1.7em;
             font-family: 'Signika';
@@ -752,15 +746,15 @@ body{
                 padding-bottom: 1em;
                 width: 100px;
             }
-            h4{
+            h5{
                 padding-bottom: .6em;
                 font-family: 'Signika';
             }
             p{
-                padding-bottom: 1em;
+                margin-bottom: 1em;
                 font-family: 'Arimo';
             }
-            a button{
+            button{
                 background: #ffffff;
                 border-radius: 5px;
                 border: 1px solid rgb(44, 44, 206);
@@ -776,42 +770,21 @@ body{
     }
 }
 
-// .swiper-wrapper-1 > div {
-//     max-width: 570px;
-//     border: 2px solid red;
-//     height: auto;
-//     margin-inline:1em ;
-// }
-
-
-.swiper-wrapper-1{
-    display: flex;
-    flex-direction: row;
-}
 .swiper-3{
-    // background: #ffffff;
     background: linear-gradient(to bottom ,#ffffff,#ebfcff,#ffffff);
-
-
-
+    margin-inline: auto;
     .swiper-4{
         margin-inline: 1em;
-        padding-block: 2em;
-        // border: 2px solid;
+        margin-block: 2em;
         .swiper-slide-1 > div{
             margin-inline: 1em;
             border: 2px solid rgba($color: grey, $alpha: .6);
-            margin: auto;
             border-radius: 10px;
         }
-        .swiper-slide-1{
-            max-width: 470px;
-            margin: auto;
-            box-shadow: 1px gray;
+        .swiper-slide-border{
             display: flex;
-            display: inline;
-            // flex-direction: column;
-
+            flex-direction: column;
+            
             .swiper-flex-1{
                 padding-inline: 1em;
                 h6{
@@ -840,7 +813,7 @@ body{
                 background: linear-gradient(to right, #7a5ec4,#e793d8);
                 color: #ffffff;
                 padding: 1em;
-                border: 2px solid ;
+                border-radius: 5px;
                 h6{
                     padding-top: 1em;
                     font-size: 1.3em;
@@ -874,16 +847,17 @@ body{
         }
         button{
             border: .1px solid $btn-color;
-            font-size: 1.3em .9em;
+            font-size: 1em;
             border-radius: 7px;
             font-family: 'Arimo';
-            padding: 1em 2em;
-            background: #0065ff;
+            padding: 1em;
+            background: $btn-color;
             color: #ffffff;
 
             &:hover{
                 transition: .3s;
-                background: #0a66c2;
+                color: black;
+                background: rgb(103, 103, 239);
             }
         } 
     }
@@ -1325,7 +1299,15 @@ body{
     .small-font{
         font-size: 1em;
     }
-
+    
+    .swiper-wrapper > div{
+        max-width: 430px;
+        max-height: auto;
+        margin-inline: .5em;
+        scroll-behavior: auto;
+        overflow: hidden;
+        // border: 2px solid red;
+    }
     .contain-1{
         max-width: 500px;
         // border: 2px solid red;
@@ -1455,23 +1437,30 @@ body{
 
     .slider-head{
         max-width: 1200px;
+        // margin: auto;
+        // border: 2px solid blue;
     }
+    // .slider-logo{
+    // }
+
     .bottom-swiper-flex{
         max-width: 1200px;
-        display: flex;
-        margin-inline: 1em;
-        // border: 2px solid red;
+        margin-inline: auto;
+        flex-direction: row;
+        border: 2px solid red;
 
         .swiper-note{
             p{
+                
                 font-size: 1.3em;
                 font-family: 'Arimo';
             }
         }
 
         .swiper-btn{
+            margin-left: auto;
+            margin-right: 0;
             font-family: 'Arimo';
-            // border: 2px solid red;
         }
     }
 
