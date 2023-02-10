@@ -150,10 +150,6 @@ a {
   bottom: 0;
 }
 
-.showcase-bg {
-  max-width: 1200px;
-  margin: auto;
-}
 .showcase-bg .main-contain {
   margin-inline: 1.5em;
 }
@@ -289,7 +285,7 @@ a {
   color: #1560d0;
 }
 .note-area .notes-flex {
-  margin: 2em 1em;
+  margin: 2em 0em;
 }
 .note-area .notes-border-1 .notes-flex-2, .note-area .notes-border-1 .notes-flex-3, .note-area .notes-border-1 .notes-flex-4 {
   background: #ffffff;
@@ -699,7 +695,6 @@ a {
   margin-inline: auto;
 }
 .swiper-3 .swiper-4 {
-  margin-inline: 1em;
   margin-block: 2em;
 }
 .swiper-3 .swiper-4 .swiper-slide-1 > div {
@@ -1046,7 +1041,7 @@ a {
           margin-inline-end: 1em;
 }
 .footer .end-footer {
-  text-align: center;
+  margin-block: 1em;
 }
 .footer .end-footer h3 {
   font-size: 1.5em;
@@ -1070,7 +1065,7 @@ a {
     max-width: 530px;
     margin-inline: auto;
   }
-  .heading-showcase, .contain-1, .notes-head, .notes-flex, .slider-head, .bottom-swiper-flex, .plans, .swiper-company, .swiper-last h2, .btn-foot, .footer-flex-1, .footer-flex-2 {
+  .heading-showcase, .contain-1, .notes-head, .notes-flex, .slider-head, .bottom-swiper-flex, .plans, .swiper-company, .swiper-last h2, .btn-foot, .footer-flex-1, .footer-flex-2, .end-footer {
     max-width: 500px;
     margin: auto;
   }
@@ -1119,7 +1114,7 @@ a {
     width: 600px;
     margin: auto;
   }
-  .heading-showcase, .contain-1, .slider-head, .bottom-swiper-flex, .plans, .swiper-company, .swiper-last h2, .footer-flex-1, .footer-flex-2 {
+  .heading-showcase, .contain-1, .slider-head, .bottom-swiper-flex, .plans, .swiper-company, .swiper-last h2, .footer-flex-1, .footer-flex-2, .end-footer {
     max-width: 700px;
     margin: auto;
   }
@@ -1225,6 +1220,7 @@ a {
     max-width: 500px;
   }
   .contain-1 .hero-1 {
+    margin-inline: 1em;
     padding-top: 0em;
     text-align: start;
   }
@@ -1235,16 +1231,25 @@ a {
     padding-top: 0em;
     text-align: start;
   }
+  .contain-1 .hero-2 {
+    margin-inline: 1em;
+  }
   .contain-1 .hero-2 .padding {
     gap: 0em;
   }
   .contain-1 .hero-2 .sign-btn {
     margin-inline: auto;
+    padding: 1em;
+  }
+  .contain-1 .hero-2 .sign-btn a {
+    font-size: 1em;
   }
   .contain-1 .hero-2 .textarea-top {
     margin-right: auto;
   }
   .contain-1 .hero-2 .textarea-top textarea {
+    padding: 1em;
+    font-size: 1em;
     padding: 1em 3em 0em 0.5em;
   }
   .contain-1 .hero-2 .li {
@@ -1570,5 +1575,9 @@ a {
   .footer .footer-flex-2 .footer-flex-2-3 ul li {
     margin-inline: 1em;
     display: inline-block;
+  }
+  .footer .end-footer {
+    max-width: 1200px;
+    text-align: center;
   }
 }
