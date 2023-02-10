@@ -61,7 +61,7 @@ a{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-block: 1em;
+        padding-block: .5em;
 
         .logo-list{
             display: flex;
@@ -1289,6 +1289,8 @@ a{
         }
     }
     .navbar{
+        max-width: 1350px;
+        margin-inline: auto;
         .list-items{
             display: inline;
         }

@@ -70,7 +70,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-block: 1em;
+  padding-block: 0.5em;
 }
 .navbar .flex .logo-list {
   display: -webkit-box;
@@ -1261,6 +1261,10 @@ a {
     -webkit-text-decoration: underline 2px solid rgb(225, 209, 209);
             text-decoration: underline 2px solid rgb(225, 209, 209);
     color: rgb(225, 209, 209);
+  }
+  .navbar {
+    max-width: 1350px;
+    margin-inline: auto;
   }
   .navbar .list-items {
     display: inline;
