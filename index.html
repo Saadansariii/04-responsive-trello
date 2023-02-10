@@ -76,30 +76,31 @@
     </section>
 
 
-
-    <section class="note-area">
-            <div class="notes-head">
-                <span>TRELLO 101</span>
-                <h3>A productivity powerhouse</h3>
-                <p>Simple,flexible,and powerful.All it takes are boards,lists,and cards to get a clear view of who's doing What and needs to get done. Learn more in out <a href="#"><span>guide for getting started</span></a>.
-                </p>
-            </div>
-         <div class="notes-flex">
-            <div class="notes-flex-1">
-                <img src="image/third.png" alt="trello img">
-            </div>
-            <div class="notes-border-1">
-                <div class="notes-flex-2">
-                    <h4>Boards</h4>
-                    <p>Trello boards keep tasks organized and work moving forword.in a glance,see everything from "things to do"to "aww yeaw,we did it!"</p>
+    <section class="note-area-color">
+        <div class="note-area">
+                <div class="notes-head">
+                    <span>TRELLO 101</span>
+                    <h3>A productivity powerhouse</h3>
+                    <p>Simple,flexible,and powerful.All it takes are boards,lists,and cards to get a clear view of who's doing What and needs to get done. Learn more in out <a href="#"><span>guide for getting started</span></a>.
+                    </p>
                 </div>
-                <div class="notes-flex-3">
-                    <h4>list</h4>
-                    <p>the different stages of a task.Start as To Do,Doing or Done-or build a workflow custom fit to your team's needs.There's no wrong way to trello.</p>
+            <div class="notes-flex">
+                <div class="notes-flex-1">
+                    <img src="image/third.png" alt="trello img">
                 </div>
-                <div class="notes-flex-4">
-                    <h4>cards</h4>
-                    <p>Cards represent tasks and ideas and hold all the information to get the job done.As you make progress,move cards across lists to show their status.</p>
+                <div class="notes-border-1">
+                    <div class="notes-flex-2">
+                        <h4>Boards</h4>
+                        <p>Trello boards keep tasks organized and work moving forword.in a glance,see everything from "things to do"to "aww yeaw,we did it!"</p>
+                    </div>
+                    <div class="notes-flex-3">
+                        <h4>list</h4>
+                        <p>the different stages of a task.Start as To Do,Doing or Done-or build a workflow custom fit to your team's needs.There's no wrong way to trello.</p>
+                    </div>
+                    <div class="notes-flex-4">
+                        <h4>cards</h4>
+                        <p>Cards represent tasks and ideas and hold all the information to get the job done.As you make progress,move cards across lists to show their status.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -228,7 +229,7 @@
                 <img src="image/ViewsBackground_Right_Narrow.svg" alt="none">
             </div>
             <div class="head-trello">
-                <h2>See Work in a Whole new Way</h2>
+                <h3>See Work in a Whole new Way</h3>
                 <p>View your team's project from every angle and bring a fresh prespective to the rask at hand.</p>
                 <button>Discover all Trello views</button>
             </div>
@@ -380,6 +381,21 @@
                 </div>
             </div>
         </div>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                cssMode: true,
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                el: ".swiper-pagination",
+                },
+                mousewheel: true,
+                keyboard: true,
+            });
+        </script>
+        </section>
         <div class="swiper-company">
             <h3>join over 2,000,000 teams worldwide that are using Trello to get more done.</h3>
             <!-- <img class="desktop-view" src="image/Company logos_ Visa_ Coinbase_ John Deere_ Zoom_ Gr.svg" alt="brands photos"> -->
@@ -399,25 +415,9 @@
                 </div>
             </div>
         </div>
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                cssMode: true,
-                navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-                },
-                pagination: {
-                el: ".swiper-pagination",
-                },
-                mousewheel: true,
-                keyboard: true,
-            });
-        </script>
-    </section>
-
     <section class="footer">
         <div class="footer-flex-1">
-            <div class="footer-flex-1-1">
+            <div class="footer-1">
                 <div class="img">
                     <img src="image/favicon.ico" alt="logo">
                 </div>
@@ -426,11 +426,23 @@
                     <span class="arimo">Trello</span>
                 </div>
             </div>
-            <div class="footer-flex-1-2">
+            <div class="footer-2">
                 <ul>  
-                    <li><h3>About Trello</h3> <p>What's behind the boards.</p></li>
+                    <li><h3>About Trello</h3><p>What's behind the boards.</p></li>
+                </ul>
+            </div>
+            <div class="footer-3">
+                <ul>
                     <li><h3>Jobs</h3><p>Learn about open roles on the Trello team.</p></li>
+                </ul>
+            </div>
+            <div class="footer-4">
+                <ul>
                     <li><h3>Apps</h3><p>Download the Trello App for your Desktop or Mobile devices.</p></li>
+                </ul>
+            </div>
+            <div class="footer-5">
+                <ul>
                     <li><h3>Contact us</h3><p>Need anything?Get in touch and we can help.</p></li>
                 </ul>
             </div>
@@ -438,6 +450,8 @@
         <div class="footer-flex-2">
             <div class="footer-flex-2-1">
                <p><i class="fa fa-thin fa-globe"></i><a href="#">English (US)</a></p>
+            </div>
+            <div class="footer-flex-2-3">
                 <ul>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Teams</a></li>

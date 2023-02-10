@@ -23,10 +23,37 @@ body {
   position: relative;
 }
 
+h2 {
+  font-size: 2em;
+  font-family: "Signika";
+}
+
+h3 {
+  font-size: 1.5em;
+  font-family: "Signika";
+}
+
+h4 {
+  font-size: 1em;
+  font-family: "Arimo";
+}
+
+p {
+  font-size: 1em;
+  font-family: "Arimo";
+}
+
+a {
+  font-family: "Arimo";
+  font-size: 1em;
+}
+
+.small-font {
+  font-size: 1em;
+}
+
 .container {
-  max-width: 1300px;
-  margin-inline: auto;
-  padding-left: 1em;
+  margin-inline: 1em;
 }
 
 .navbar {
@@ -229,9 +256,12 @@ body {
   z-index: 2;
 }
 
-.note-area {
+.note-area-color {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5fdff));
   background: linear-gradient(to bottom, #ffffff, #f5fdff);
+}
+
+.note-area {
   margin-inline: 1em;
   padding-top: 3em;
 }
@@ -779,9 +809,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .plans .plans-flex .plan-3 {
   border: 2px solid rgb(21, 216, 255);
@@ -924,7 +951,16 @@ body {
   color: #ffffff;
   padding-block: 1em;
 }
-.footer .footer-flex-1 .footer-flex-1-1 {
+.footer .footer-flex-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer .footer-flex-1 .footer-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -935,38 +971,50 @@ body {
   margin-bottom: 1em;
   gap: 0.5em;
 }
-.footer .footer-flex-1 .footer-flex-1-1 .img {
+.footer .footer-flex-1 .footer-1 .img {
   margin-top: 1em;
   width: 30px;
   height: 30px;
 }
-.footer .footer-flex-1 .footer-flex-1-1 span {
+.footer .footer-flex-1 .footer-1 span {
   display: block;
 }
-.footer .footer-flex-1 .footer-flex-1-1 .signika {
+.footer .footer-flex-1 .footer-1 .signika {
   font-weight: 400;
   font-size: 1em;
   font-family: "Arimo";
 }
-.footer .footer-flex-1 .footer-flex-1-1 .arimo {
+.footer .footer-flex-1 .footer-1 .arimo {
   font-size: 1.5em;
   font-weight: 700;
   font-family: "Signika";
 }
-.footer .footer-flex-1 .footer-flex-1-2 ul > li {
+.footer .footer-flex-1 > div ul li {
   border-block: 1px solid rgba(128, 128, 128, 0.5);
   padding-block: 0.5em;
   margin-block: 1em;
 }
-.footer .footer-flex-1 .footer-flex-1-2 h3 {
+.footer .footer-flex-1 > div h3 {
   margin-block: 0.4em;
   font-size: 0.99em;
   font-family: "Arimo";
 }
-.footer .footer-flex-1 .footer-flex-1-2 p {
+.footer .footer-flex-1 > div p {
   font-weight: 400;
   font-size: 0.8em;
   padding-block: 0.5em;
+}
+.footer .footer-flex-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer .footer-flex-2 .footer-flex-2-1 {
   margin-block: 1em;
@@ -979,13 +1027,16 @@ body {
 .footer .footer-flex-2 .footer-flex-2-1 i {
   margin-right: 1em;
 }
-.footer .footer-flex-2 .footer-flex-2-1 ul li {
+.footer .footer-flex-2 .footer-flex-2-3 {
+  margin-block: 1em;
+}
+.footer .footer-flex-2 .footer-flex-2-3 ul li {
   margin-block: 1em;
   font-family: "Arimo";
-  font-size: 0.99em;
+  font-size: 1em;
 }
 .footer .footer-flex-2 .footer-flex-2-2 {
-  margin-block: 2em;
+  margin-bottom: 1em;
 }
 .footer .footer-flex-2 .footer-flex-2-2 i {
   border: 2px solid;
@@ -1016,11 +1067,28 @@ body {
     margin: auto;
   }
   .swiper-slide-1 {
-    max-width: 500px;
+    max-width: 530px;
+    margin-inline: auto;
   }
-  .heading-showcase, .head-trello, .contain-1, .notes-head, .notes-flex, .slider-head, .bottom-swiper-flex, .plans, .swiper-company, .swiper-last h2, .btn-foot, .footer-flex-1, .footer-flex-2 {
+  .heading-showcase, .contain-1, .notes-head, .notes-flex, .slider-head, .bottom-swiper-flex, .plans, .swiper-company, .swiper-last h2, .btn-foot, .footer-flex-1, .footer-flex-2 {
     max-width: 500px;
     margin: auto;
+  }
+  .trello-view .head-trello {
+    max-width: 500px;
+    margin-inline: auto;
+  }
+  .note-area {
+    max-width: 500px;
+    margin-inline: auto;
+    padding-bottom: 2em;
+  }
+  .note-area .notes-head {
+    margin-inline: 1em;
+    width: 700px;
+  }
+  .note-area .notes-flex {
+    max-width: 700px;
   }
 }
 @media (min-width: 768px) {
@@ -1051,13 +1119,17 @@ body {
     width: 600px;
     margin: auto;
   }
-  .heading-showcase, .head-trello, .contain-1, .notes-head, .notes-flex, .slider-head, .bottom-swiper-flex, .plans, .swiper-company, .swiper-last h2, .footer-flex-1, .footer-flex-2 {
+  .heading-showcase, .contain-1, .slider-head, .bottom-swiper-flex, .plans, .swiper-company, .swiper-last h2, .footer-flex-1, .footer-flex-2 {
     max-width: 700px;
     margin: auto;
   }
   .swiper-wrapper > div {
     max-width: 600px;
     max-height: 300px;
+  }
+  .trello-view .head-trello {
+    max-width: 700px;
+    margin-inline: auto;
   }
   .dead-line > div {
     max-width: 700px;
@@ -1066,6 +1138,23 @@ body {
   .showcase-flex > div {
     max-width: 300px;
     margin: auto;
+  }
+  .note-area {
+    max-width: 700px;
+    margin-inline: auto;
+    padding-bottom: 2em;
+  }
+  .note-area .notes-head {
+    margin-inline: 1em;
+    width: 700px;
+  }
+  .note-area .notes-flex {
+    max-width: 700px;
+  }
+  .swiper-slide-1 {
+    max-width: 480px;
+    margin-inline: auto;
+    padding-block: 2em;
   }
   .showcase-flex {
     max-width: 700px;
@@ -1189,13 +1278,15 @@ body {
   }
   .note-area {
     max-width: 1200px;
+    margin-inline: auto;
   }
   .note-area .notes-head {
     width: 700px;
-    margin: 2em;
+    margin-inline: 1em;
   }
   .note-area .notes-flex {
     max-width: 1200px;
+    padding-inline: 1em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1234,6 +1325,7 @@ body {
   }
   .slider-head {
     max-width: 1200px;
+    margin-inline: auto;
   }
   .bottom-swiper-flex {
     max-width: 1200px;
@@ -1242,7 +1334,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    border: 2px solid red;
   }
   .bottom-swiper-flex .swiper-note p {
     font-size: 1.3em;
@@ -1253,27 +1344,88 @@ body {
     margin-right: 0;
     font-family: "Arimo";
   }
-  .trello-view .dead-line-flex-1, .trello-view .dead-line-flex-2 {
+  .trello-view {
+    margin-inline: auto;
+  }
+  .trello-view .dead-line .dead-line-flex-1, .trello-view .dead-line .dead-line-flex-2 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .trello-view .dead-line-flex-2 {
+  .trello-view .dead-line .dead-line-flex-1 .dead-img, .trello-view .dead-line .dead-line-flex-2 .dead-img {
+    margin-bottom: 0.5em;
+  }
+  .trello-view .dead-line .dead-line-flex-1 {
+    max-width: 900px;
+  }
+  .trello-view .dead-line .dead-line-flex-1 .dead-img {
+    width: 60%;
+    margin-block: auto;
+  }
+  .trello-view .dead-line .dead-line-flex-1 .dead-para {
+    width: 40%;
+    margin-left: 1em;
+    margin-block: auto;
+  }
+  .trello-view .dead-line .dead-line-flex-1 .dead-para h5 {
+    font-size: 1.1em;
+    margin-bottom: 1.3em;
+  }
+  .trello-view .dead-line .dead-line-flex-1 .dead-para p {
+    line-height: 1.4em;
+    font-size: 1.1em;
+    margin-block: 1.3em;
+  }
+  .trello-view .dead-line .dead-line-flex-1 .dead-para a {
+    font-size: 1.1em;
+  }
+  .trello-view .dead-line .dead-line-flex-2 {
+    max-width: 900px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    margin-top: auto;
+  }
+  .trello-view .dead-line .dead-line-flex-2 .dead-img {
+    margin-block: auto;
+    width: 70%;
+  }
+  .trello-view .dead-line .dead-line-flex-2 .dead-para {
+    margin-right: 1em;
+    width: 40%;
+    margin-block: auto;
+  }
+  .trello-view .dead-line .dead-line-flex-2 .dead-para h5 {
+    font-size: 1.1em;
+    margin-bottom: 1.3em;
+  }
+  .trello-view .dead-line .dead-line-flex-2 .dead-para p {
+    line-height: 1.5em;
+    font-size: 1.1em;
+    margin-block: 1.3em;
+  }
+  .trello-view .dead-line .dead-line-flex-2 .dead-para a {
+    font-size: 1.1em;
+  }
+  .trello-view .head-trello {
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+  .trello-view .head-trello p {
+    width: 70%;
+    margin-inline: auto;
   }
   .showcase-trello-3 {
-    margin-inline: 1em;
+    max-width: 1200px;
+    margin-inline: auto;
   }
   .showcase-trello-3 .showcase-flex {
-    max-width: 940px;
+    max-width: 1200px;
     margin-inline: 1em;
     width: auto;
     height: auto;
-    border: 2px solid red;
   }
   .showcase-trello-3 .showcase-flex .showcase-flex-1 {
     padding-block: 1.2em;
@@ -1282,7 +1434,7 @@ body {
     padding-block: 1.5em;
   }
   .showcase-trello-3 .showcase-flex > div {
-    min-width: 300px;
+    min-width: 385px;
   }
   .showcase-trello-3 .heading-showcase {
     max-width: 1200px;
@@ -1293,11 +1445,130 @@ body {
         flex-wrap: nowrap;
     width: 100%;
   }
+  .plans {
+    max-width: 1200px;
+  }
+  .plans .plans-flex > div {
+    min-width: 290px;
+  }
+  .plans .plans-flex > div .plan-small {
+    margin-block: 1em;
+    font-weight: 100;
+  }
+  .plans .plans-flex > div .plan-para {
+    font-weight: 300;
+    font-family: "Arimo";
+    font-size: 1em;
+    margin-right: 0;
+  }
+  .plans .plans-flex > div .plan-line p {
+    margin-top: auto;
+    color: #0065ff;
+    font-size: 1em;
+    -webkit-text-decoration: 1px solid underline;
+            text-decoration: 1px solid underline;
+  }
   .plans .plans-flex {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    display: contents;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .plans .plans-flex .plan-1 .plan-para {
+    margin-bottom: 5em;
+  }
+  .plans .plans-flex .plan-2 .plan-para {
+    margin-bottom: 3.5em;
+  }
+  .plans .plans-flex .plan-3 .plan-para {
+    margin-bottom: 2.5em;
+  }
+  .plans .plans-flex .plan-4 .plan-para {
+    margin-bottom: 3.8em;
+  }
+  .swiper-3 .swiper-4 .swiper-slide-1 {
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+  .swiper-3 .swiper-4 .swiper-slide-border {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .swiper-3 .swiper-4 .swiper-slide-border .swiper-flex-1 {
+    width: 60%;
+    margin-inline: auto;
+  }
+  .swiper-3 .swiper-4 .swiper-slide-border .swiper-flex-1 h6 {
+    font-family: "Arimo";
+    line-height: 1.4em;
+    font-weight: 500;
+    width: 600px;
+    padding-bottom: 3em;
+  }
+  .swiper-3 .swiper-4 .swiper-slide-border .swiper-flex-1 span {
+    line-height: 2em;
+  }
+  .swiper-3 .swiper-4 .swiper-slide-border .swiper-flex-1 img {
+    width: 100px;
+  }
+  .swiper-3 .swiper-4 .swiper-slide-border .swiper-flex-1 a {
+    display: none;
+  }
+  .swiper-3 .swiper-4 .swiper-slide-border .swiper-flex-2 {
+    width: 40%;
+    margin-inline: auto;
+    margin-left: auto;
+  }
+  .swiper-3 .swiper-4 .swiper-slide-border .swiper-flex-2 h6 {
+    width: 80%;
+    font-size: 2em;
+    font-family: "Arimo";
+    margin-bottom: 3em;
+  }
+  .swiper-3 .swiper-4 .swiper-slide-border .swiper-flex-2 .padding {
+    border: 2px solid blue;
+    padding-bottom: 0.2;
+    margin-block: auto;
+  }
+  .swiper-company {
+    max-width: 800px;
+  }
+  .footer {
+    margin: auto;
+  }
+  .footer .footer-flex-1 {
+    max-width: 1200px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .footer-flex-1 > div {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 200px;
+  }
+  .footer .footer-flex-1 > div ul li {
+    border-block: none;
+  }
+  .footer .footer-flex-2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 1200px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .footer-flex-2 .footer-flex-2-3 ul li {
+    margin-inline: 1em;
+    display: inline-block;
   }
 }

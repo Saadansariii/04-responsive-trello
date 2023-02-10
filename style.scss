@@ -27,13 +27,36 @@ li{
 }
 body{
     position: relative;
-    // overflow-x: hidden;
+}
 
+h2{
+    font-size: 2em;
+    font-family: 'Signika';
+}
+
+h3{
+    font-size: 1.5em;
+    font-family: 'Signika';
+}
+
+h4{
+    font-size: 1em;
+    font-family: 'Arimo';
+}
+p{
+    font-size: 1em;
+    font-family: 'Arimo';
+}
+
+a{
+    font-family: 'Arimo';
+    font-size: 1em;
+}
+.small-font{
+    font-size: 1em;
 }
 .container{
-    max-width: 1300px;
-    margin-inline: auto;
-    padding-left: 1em;
+    margin-inline: 1em;
 }
 .navbar{
     background: #ffffff;
@@ -255,8 +278,11 @@ body{
         z-index: 2;
     }
 }
-.note-area{
+.note-area-color{
+
     background: linear-gradient(to bottom, (#ffffff), (#f5fdff));
+}
+.note-area{
     // border: 2px solid black;
     margin-inline: 1em;
     padding-top: 3em;
@@ -865,19 +891,14 @@ body{
 
 .plans{
     padding-block: 2em;
+
     .plans-flex > div{
-        // min-height: 300px;
         border: 1px solid rgb(206, 200, 200);
-        // min-width: 300px;
-        // gap: 1em;
         padding: 1em 1em;
         background: #ffffff;
-        // min-width: 80px;
-        // max-width: 500px;
         border-radius: 4px;
         // margin: auto;
         margin-block: 1em;
-        // align-items: center;
         
     }
     .plans-flex{
@@ -888,7 +909,7 @@ body{
         // border: 4px solid black;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        // justify-content: center;
         // display: ;
         .plan-3{
             border: 2px solid rgb(21, 216, 255);
@@ -1037,34 +1058,23 @@ body{
 }
 
 .footer{
-    // display: flex;
-    // display: inline-block;
-    // border: 2px solid;
-    // max-width: 1200px;
-    // margin: auto;
     padding-inline: 1em;
-    
     background: #172b4d;
     color: #ffffff;
     padding-block: 1em;
     .footer-flex-1{
-        // display: flex;
-        // border: 2px solid ;
-        // display: inline-block;
-
-        .footer-flex-1-1{
+        display: flex;
+        // flex-wrap: wrap;
+        flex-direction: column;
+        .footer-1{
             display: flex;
             flex-direction: row;
-            // border: 2px solid ;
-            // border: 2p;
             margin-bottom: 1em;
             gap: .5em;
             .img{
                 margin-top: 1em;
-                // border: 2px solid;
                 width: 30px;
                 height: 30px;
-                // margin-block: auto;
             }
             span{
                 display: block;
@@ -1081,34 +1091,31 @@ body{
                 font-family: 'Signika';
             }  
         }
-        .footer-flex-1-2{
-            ul > li{
-                border-block: 1px solid rgba($color:grey,$alpha:.5);
-                padding-block: .5em;
-                margin-block:1em ;
-            }
-            h3{
-                // margin-block:.5em;
-                margin-block: .4em;
-                font-size: .99em;
-                font-family: 'Arimo';
-            }
-            p{
-                // display: flex;
-                font-weight: 400;
-                font-size: .8em;
-                // display: flex;
-                // border: 2px solid ;
-                padding-block: .5em;
-            }
-        }
         
     }
+    .footer-flex-1 > div{
+        ul li{
+            border-block: 1px solid rgba($color:grey,$alpha:.5);
+            padding-block: .5em;
+            margin-block:1em ;
+        }
+        h3{
+            margin-block: .4em;
+            font-size: .99em;
+            font-family: 'Arimo';
+        }
+        p{
+            font-weight: 400;
+            font-size: .8em;
+            padding-block: .5em;
+        }
+    }
     .footer-flex-2{
-
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         .footer-flex-2-1{
             margin-block:1em ;
-            // border: 2px solid;
             p{
                 margin-block: 1em;
                 font-size: 1em;
@@ -1119,15 +1126,17 @@ body{
                 margin-right: 1em;
             }
 
+        }
+        .footer-flex-2-3{
+            margin-block: 1em;
             ul li{
                 margin-block: 1em;
                 font-family: 'Arimo';
-                font-size: .99em;
+                font-size: 1em;
             }
         }
-
         .footer-flex-2-2 {
-            margin-block: 2em;
+            margin-bottom: 1em;
             i{
                 border: 2px solid ;
                 padding: .3em;
@@ -1167,13 +1176,35 @@ body{
 
     .swiper-slide-1{
         // border: 2px solid red;
-        max-width: 500px;
+        max-width: 530px;
+        margin-inline: auto;
         // max-height: 1100px;
     }
 
-    .heading-showcase,.head-trello,.contain-1,.notes-head,.notes-flex,.slider-head,.bottom-swiper-flex,.plans,.swiper-company,.swiper-last h2,.btn-foot,.footer-flex-1,.footer-flex-2{
+    .heading-showcase,.contain-1,.notes-head,.notes-flex,.slider-head,.bottom-swiper-flex,.plans,.swiper-company,.swiper-last h2,.btn-foot,.footer-flex-1,.footer-flex-2{
         max-width: 500px;
         margin: auto;
+    }
+
+    .trello-view{
+        .head-trello{
+            max-width: 500px;
+            margin-inline: auto;
+        }
+    }
+
+    .note-area{
+        max-width: 500px;
+        margin-inline:auto ;
+        padding-bottom: 2em;
+        .notes-head{
+            margin-inline: 1em;
+            width: 700px;
+        }
+
+        .notes-flex{
+            max-width: 700px;
+        }
     }
 }
 
@@ -1210,17 +1241,21 @@ body{
         margin: auto;
     }
 
-    .heading-showcase,.head-trello,.contain-1,.notes-head,.notes-flex,.slider-head,.bottom-swiper-flex,.plans,.swiper-company,.swiper-last h2,.footer-flex-1,.footer-flex-2{
+    .heading-showcase,.contain-1,.slider-head,.bottom-swiper-flex,.plans,.swiper-company,.swiper-last h2,.footer-flex-1,.footer-flex-2{
         max-width: 700px;
         margin: auto;
     }
-    
     .swiper-wrapper > div{
         max-width: 600px;
         max-height: 300px;
         // border: 2px solid red;
     }
-
+    .trello-view{
+        .head-trello{
+            max-width: 700px;
+            margin-inline: auto;
+        }
+    }
     .dead-line > div {
         max-width: 700px;
         margin: auto;
@@ -1230,6 +1265,26 @@ body{
         margin: auto;
     }
 
+    .note-area{
+        max-width: 700px;
+        margin-inline:auto ;
+        padding-bottom: 2em;
+        .notes-head{
+            margin-inline: 1em;
+            width: 700px;
+        }
+
+        .notes-flex{
+            max-width: 700px;
+        }
+    }
+
+    .swiper-slide-1{
+        // border: 2px solid yellow;
+        max-width: 480px;
+        margin-inline: auto;
+        padding-block: 2em;
+    }
     .showcase-flex{
         max-width: 700px;
         margin: auto;
@@ -1393,13 +1448,18 @@ body{
 
     .note-area{
         max-width: 1200px;
+        margin-inline: auto;
+
         .notes-head{
             width: 700px;
-            margin: 2em;
+            // margin: 0;
+            margin-inline: 1em;
         }
-
+        
         .notes-flex{
+            // border: 2px solid red;
             max-width: 1200px;
+            padding-inline: 1em;
             display: flex;
             flex-direction: row-reverse;
             justify-content: space-between;
@@ -1437,17 +1497,15 @@ body{
 
     .slider-head{
         max-width: 1200px;
-        // margin: auto;
-        // border: 2px solid blue;
+        margin-inline: auto;
     }
-    // .slider-logo{
-    // }
-
+    
     .bottom-swiper-flex{
+        // border: 2px solid red;
         max-width: 1200px;
         margin-inline: auto;
         flex-direction: row;
-        border: 2px solid red;
+        // border: 2px solid red;
 
         .swiper-note{
             p{
@@ -1465,22 +1523,94 @@ body{
     }
 
     .trello-view{
-        .dead-line-flex-1,.dead-line-flex-2{
-            flex-direction: row;
+        margin-inline: auto;
+        .dead-line{
+
+            .dead-line-flex-1,.dead-line-flex-2{
+                flex-direction: row;
+
+                .dead-img{
+                    margin-bottom: .5em;
+                }
+
+            }
+        .dead-line-flex-1{
+            max-width: 900px;
+            .dead-img{
+                width: 60%;
+                margin-block: auto;
+            }
+            .dead-para{
+                width: 40%;
+                margin-left: 1em;
+                margin-block: auto;
+                h5{
+                    font-size: 1.1em;
+                    margin-bottom: 1.3em;
+                }
+                p{
+                    line-height: 1.4em;
+                    font-size: 1.1em;
+                    margin-block: 1.3em;
+                }
+                a{
+                    font-size: 1.1em;
+                }
+            }
         }
         .dead-line-flex-2{
+            max-width: 900px;
             flex-direction: row-reverse;
+            margin-top: auto;
+            .dead-img{
+                // border: 2px solid red;
+                margin-block: auto;
+                width: 70%;
+                
+            }
+            .dead-para{
+                margin-right: 1em;
+                width: 40%;
+                margin-block:auto ;
+                h5{
+                    // margin-top: 1em;
+                    font-size: 1.1em;
+                    margin-bottom: 1.3em;
+                }
+                p{
+                    line-height: 1.5em;
+                    font-size: 1.1em;
+                    margin-block: 1.3em;
+                }
+                a{
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+
+        .head-trello{
+            max-width: 1200px;
+            margin-inline: auto;
+            // border: 2px solid red;
+
+            p{
+                width: 70%;
+                margin-inline: auto;
+            }
+
         }
     }
     .showcase-trello-3{
-        // margin: 0;
-        margin-inline: 1em;
+        // margin-inline: 1em;
+        max-width: 1200px;
+        margin-inline: auto;
         .showcase-flex{
-            max-width: 940px;
+            max-width: 1200px;
             margin-inline: 1em;
             width: auto;
             height: auto;
-            border: 2px solid red;
+            // border: 2px solid red;
             .showcase-flex-1{
                 padding-block: 1.2em;
             }
@@ -1492,7 +1622,7 @@ body{
 
         .showcase-flex > div{
             // border: 2px solid blue;
-            min-width: 300px;
+            min-width: 385px;
         }
 
         .heading-showcase{
@@ -1507,10 +1637,145 @@ body{
         
     }
     .plans{
+        max-width: 1200px;
 
+        .plans-flex > div{
+            min-width: 290px;
+
+            .plan-small{
+                margin-block:1em ;
+                font-weight: 100;
+                // border: 2px solid red;
+            }
+            .plan-para{
+                font-weight: 300;
+                font-family: 'Arimo';
+                font-size: 1em;
+                margin-right: 0;
+            }
+            
+            .plan-line{
+                p{
+                    margin-top: auto;
+                    color: $btn-color;
+                    font-size: 1em;
+                    text-decoration:1px solid underline ;
+                }
+            }
+        }
         .plans-flex{
-            flex-direction: column;
-            display: contents;
+            flex-direction: row;
+
+            .plan-1{
+                .plan-para{
+                    margin-bottom: 5em;
+                }
+            }
+            .plan-2{
+                .plan-para{
+                    margin-bottom: 3.5em;
+                }
+            }
+            .plan-3{
+                .plan-para{
+                    margin-bottom: 2.5em;
+                }
+            }
+            .plan-4{
+                .plan-para{
+                    margin-bottom: 3.8em;
+                }
+            }
+        }
+    }
+
+    .swiper-3{
+        .swiper-4{
+            .swiper-slide-1{
+                max-width: 1200px;
+                margin-inline:auto;
+                // border: 2px solid red;
+                // margin-block: 2em;
+            }
+            
+            .swiper-slide-border{
+                flex-direction: row;
+                // margin-left: auto;
+                .swiper-flex-1{
+                    width: 60%;
+                    margin-inline: auto;
+                    h6{
+                        font-family: 'Arimo';
+                        line-height: 1.4em;
+                        font-weight: 500;
+                        width: 600px;
+                        padding-bottom: 3em;
+                    }
+                    span{
+                        // border-top: 2px solid grey;
+                        line-height: 2em;
+                    }
+
+                    img{
+                        width: 100px;
+                    }
+
+                    a{
+                        display: none;
+                    }
+                }
+                .swiper-flex-2{
+                    width: 40%;
+                    margin-inline: auto;
+                    margin-left: auto;
+
+                    h6{
+                        width: 80%;
+                        font-size: 2em;
+                        font-family: 'Arimo';
+                        margin-bottom: 3em;
+                    }
+                    .padding{
+                        border: 2px solid blue;
+                        padding-bottom: .2;
+                        margin-block:auto ;
+                    }
+                }
+            }
+        }
+    }
+    .swiper-company{
+            max-width: 800px;
+    }
+    .footer{
+        margin: auto;
+        
+        .footer-flex-1{
+            max-width: 1200px;
+            // flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .footer-flex-1 > div{
+            align-items: center;
+            max-width: 200px;
+
+            ul li {
+                border-block: none;
+            }
+        }
+        .footer-flex-2{
+            flex-direction: row;
+            max-width: 1200px;
+            align-items: center;
+
+            .footer-flex-2-3{
+                ul li{
+                    margin-inline:1em ;
+                    display: inline-block;
+                }
+            }
         }
     }
 }
